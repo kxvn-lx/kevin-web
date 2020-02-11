@@ -6,7 +6,7 @@ const Header = () => (
     <div className="bg-container">
       <div className="inner-header">
         <div className="logo">
-          <p className="">
+          <p className="coloured-text">
             <Link to="/">Kevin Laminto</Link>
           </p>
         </div>
