@@ -175,9 +175,9 @@ header {
 /* ================================================ */
 footer {
     display: block;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     overflow: hidden;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     .bg-container {
         border-top: #d8d8d8 1px solid;
         padding-top: 4rem;
@@ -194,7 +194,7 @@ footer {
             margin: 0 auto;
             float: none;
             width: 25%;
-            padding-top: 1rem;
+            padding-top: 0.80rem;
             text-align: center;
         }
 
@@ -212,6 +212,10 @@ footer {
                 a:hover {
                     color: $primaryTextColourHover;
                     border-color: $primaryTextColourHover;
+                }
+
+                span {
+                    font-size: 0.90em;
                 }
             }
         }

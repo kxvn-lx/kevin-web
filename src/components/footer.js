@@ -29,6 +29,10 @@ const Footer = () => {
                 <div>
                     <p>
                         Developed with ❤️ by Kevin Laminto.
+                        <br />
+                        <span>
+                            version alpha
+                        </span>
                     </p>
                 </div>
             </div>
