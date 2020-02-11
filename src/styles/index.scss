@@ -263,13 +263,11 @@ footer {
     a {
         text-decoration: none;
         transition: 0.25s;
-        color: $primaryTextColour;
-        border-bottom: 1px solid $primaryTextColour;
+        color: black;
     }
 
     a:hover {
         color: $primaryTextColourHover;
-        border-color: $primaryTextColourHover;
     }
 }
 
