@@ -27,8 +27,14 @@ html, body {
     background-color: $backgroundColour;
     overflow-x: hidden;
     font-family: $font;
-    font-size: 24px;
+    font-size: 22px;
     color: $primaryTextColour;
+}
+
+@media only screen and (max-width: 666px) {
+    html, body {
+        font-size: 18px;
+    }
 }
 
 .bg-container {
@@ -103,6 +109,7 @@ header {
                         margin-right: 0;
                     }
                 }
+
                 a:hover {
                     position: relative;
                     animation: hover-animation 1s forwards ease;
@@ -144,7 +151,7 @@ header {
         margin-bottom: 2rem;
     }
 
-    @media screen and (max-width: 666px) {
+    @media only screen and (max-width: 666px) {
         h1 {
             font-size: 1.35rem;
         }
@@ -219,6 +226,26 @@ footer {
                 }
             }
         }
+
+        @media only screen and (max-width: 666px) {
+            div:first-child {
+                width: 80%;
+            }
+
+            div:nth-child(2) {
+                margin-top: 20px;
+                width: 80%;
+                text-align: left;
+                float: left;
+            }
+
+            div:last-child {
+                float: left;
+                text-align: left;
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
     }
 }
 
@@ -232,6 +259,7 @@ footer {
     position: fixed;
     bottom: 200px;
     left: -90px;
+
     a {
         text-decoration: none;
         transition: 0.25s;
@@ -244,3 +272,10 @@ footer {
         border-color: $primaryTextColourHover;
     }
 }
+
+@media only screen and (max-width: 666px) {
+    #bigEmail-container {
+        display: none;
+    }
+}
+
