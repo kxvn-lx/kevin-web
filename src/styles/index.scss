@@ -1,279 +1,347 @@
 // Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
 
-@import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-$font: 'Open Sans', sans-serif;
-$serifFont: 'Cardo', serif;
+$font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
 // Colours
-$backgroundColour: #FFF5DC;
-$primaryTextColour: #2F1728;
+$backgroundColour: #fff5dc;
+$primaryTextColour: #2f1728;
 $primaryTextColourHover: orange;
 
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 // styles for selection area.
 ::selection {
-    background-color: orange;
-    color: black;
+  background-color: orange;
+  color: black;
 }
 
-html, body {
-    background-color: $backgroundColour;
-    overflow-x: hidden;
-    font-family: $font;
-    font-size: 22px;
-    color: $primaryTextColour;
+html,
+body {
+  background-color: $backgroundColour;
+  overflow-x: hidden;
+  font-family: $font;
+  font-size: 22px;
+  font-weight: 300;
+  color: $primaryTextColour;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 666px) {
-    html, body {
-        font-size: 18px;
-    }
+  html,
+  body {
+    font-size: 18px;
+  }
 }
 
 .bg-container {
-    width: 80vw;
-    min-width: 80vw;
-    margin: 0 auto;
+  width: 80vw;
+  min-width: 80vw;
+  margin: 0 auto;
 }
 
 .container {
-    width: 80vw;
-    max-width: 850px;
-    font-size: 1em;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80vw;
+  max-width: 850px;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /* ================================================ */
 /* ================== KEYFRAMES =================== */
 /* ================================================ */
 @keyframes link-animation {
-    0% {
-        background-size: 700%;
-        background-position: 150% 0;
-    }
-    100% {
-        background-size: 100%;
-        background-position: 0 0;
-    }
+  0% {
+    background-size: 700%;
+    background-position: 150% 0;
+  }
+  100% {
+    background-size: 100%;
+    background-position: 0 0;
+  }
 }
-
 
 /* ================================================ */
 /* =================== HEADER ===================== */
 /* ================================================ */
 header {
-    background-color: $backgroundColour;
+  background-color: $backgroundColour;
+  height: 80px;
+  width: 100%;
+  padding-top: 30px;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+
+  .inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 80px;
-    width: 100%;
-    padding-top: 30px;
-    position: fixed;
-    top: 0px;
-    z-index: 10;
 
-    .inner-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 80px;
-
-        .logo {
-            a {
-                font-weight: 600;
-                font-size: 1.3rem;
-                text-decoration: none;
-                letter-spacing: 1.5px;
-                color: $primaryTextColour;
-                display: block;
-                line-height: 1.15em;
-            }
-        }
-
-        .navigation {
-            nav {
-                a {
-                    margin: 0 20px;
-                    text-decoration: none;
-                    letter-spacing: 1.75px;
-                    color: $primaryTextColour;
-                    font-size: 0.85rem;
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-
-                a:hover {
-                    position: relative;
-                    animation: hover-animation 1s forwards ease;
-                }
-
-                a:hover:after {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 3px;
-                    background-image: linear-gradient(
-                        45deg,
-                        black 50%, 
-                        orange 50% 
-                    );
-                    background-size: 100% 100%;
-                    background-repeat: no-repeat;
-                    background-position: 100% 0;
-                    position: absolute;
-                    bottom: -0.25em; 
-                    right: 0;
-                    animation: link-animation 1s ease-out forwards;
-                }
-            }
-        }
+    .logo {
+      a {
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        color: $primaryTextColour;
+        display: block;
+        line-height: 1.15em;
+      }
     }
+
+    .navigation {
+      nav {
+        a {
+          margin: 0 20px;
+          text-decoration: none;
+          letter-spacing: 1.75px;
+          color: $primaryTextColour;
+          font-size: 0.85rem;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        a:hover {
+          position: relative;
+          animation: hover-animation 1s forwards ease;
+        }
+
+        a:hover:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background-image: linear-gradient(45deg, black 50%, orange 50%);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: 100% 0;
+          position: absolute;
+          bottom: -0.25em;
+          right: 0;
+          animation: link-animation 1s ease-out forwards;
+        }
+      }
+    }
+  }
 }
-
-
 
 /* ================================================ */
 /* ===================== MAIN ===================== */
 /* ================================================ */
 .main {
-    margin-top: 350px;
-    margin-bottom: 4em;
+  margin-top: 350px;
+  margin-bottom: 4em;
 
-    h1, p {
-        margin-bottom: 2rem;
+  h1,
+  p {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-family: $font;
+  }
+
+  @media only screen and (max-width: 666px) {
+    h1 {
+      font-size: 1.35rem;
+    }
+  }
+
+  p {
+    line-height: 1.8rem;
+
+    a {
+      text-decoration: none;
+      transition: 0.25s;
+      color: $primaryTextColour;
+      border-bottom: 1px solid $primaryTextColour;
     }
 
-    @media only screen and (max-width: 666px) {
-        h1 {
-            font-size: 1.35rem;
-        }
+    a:hover {
+      color: $primaryTextColourHover;
+      border-color: $primaryTextColourHover;
     }
-
-    p {
-        line-height: 1.8rem;
-
-        a {
-            text-decoration: none;
-            transition: 0.25s;
-            color: $primaryTextColour;
-            border-bottom: 1px solid $primaryTextColour;
-        }
-
-        a:hover {
-            color: $primaryTextColourHover;
-            border-color: $primaryTextColourHover;
-        }
-    }
+  }
 }
-
-
-
 
 /* ================================================ */
 /* ==================== FOOTER ==================== */
 /* ================================================ */
 footer {
-    display: block;
-    font-size: 0.75rem;
-    overflow: hidden;
-    padding-bottom: 3rem;
-    .bg-container {
-        border-top: #d8d8d8 1px solid;
-        padding-top: 4rem;
-        div:first-child {
-            width: 25%;
-        }
-
-        div:nth-child(2) {
-            width: 25%;
-            text-align: right;
-            float: right;
-        }
-        div:last-child {
-            margin: 0 auto;
-            float: none;
-            width: 25%;
-            padding-top: 0.80rem;
-            text-align: center;
-        }
-
-        div {
-            float: left;
-
-            p {
-                a {
-                    text-decoration: none;
-                    transition: 0.25s;
-                    color: $primaryTextColour;
-                    border-bottom: 1px solid $primaryTextColour;
-                }
-        
-                a:hover {
-                    color: $primaryTextColourHover;
-                    border-color: $primaryTextColourHover;
-                }
-
-                span {
-                    font-size: 0.90em;
-                }
-            }
-        }
-
-        @media only screen and (max-width: 666px) {
-            div:first-child {
-                width: 80%;
-            }
-
-            div:nth-child(2) {
-                margin-top: 20px;
-                width: 80%;
-                text-align: left;
-                float: left;
-            }
-
-            div:last-child {
-                float: left;
-                text-align: left;
-                width: 80%;
-                margin-top: 20px;
-            }
-        }
+  display: block;
+  font-size: 0.75rem;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  .bg-container {
+    border-top: #d8d8d8 1px solid;
+    padding-top: 4rem;
+    div:first-child {
+      width: 25%;
     }
-}
 
+    div:nth-child(2) {
+      width: 25%;
+      text-align: right;
+      float: right;
+    }
+    div:last-child {
+      margin: 0 auto;
+      float: none;
+      width: 25%;
+      padding-top: 0.8rem;
+      text-align: center;
+    }
+
+    div {
+      float: left;
+
+      p {
+        a {
+          text-decoration: none;
+          transition: 0.25s;
+          color: $primaryTextColour;
+          border-bottom: 1px solid $primaryTextColour;
+        }
+
+        a:hover {
+          color: $primaryTextColourHover;
+          border-color: $primaryTextColourHover;
+        }
+
+        span {
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 666px) {
+      div:first-child {
+        width: 80%;
+      }
+
+      div:nth-child(2) {
+        margin-top: 20px;
+        width: 80%;
+        text-align: left;
+        float: left;
+      }
+
+      div:last-child {
+        float: left;
+        text-align: left;
+        width: 80%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
 
 /* ================================================ */
 /* ================== BIG EMAIL =================== */
 /* ================================================ */
 #bigEmail-container {
-    font-weight: 600;
-    transform: rotate(-90deg);
-    position: fixed;
-    bottom: 200px;
-    left: -90px;
+  font-weight: 400;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom: 200px;
+  left: -90px;
 
-    a {
-        text-decoration: none;
-        transition: 0.25s;
-        color: black;
-    }
+  a {
+    text-decoration: none;
+    transition: 0.25s;
+    color: black;
+  }
 
-    a:hover {
-        color: $primaryTextColourHover;
-    }
+  a:hover {
+    color: $primaryTextColourHover;
+  }
 }
 
 @media only screen and (max-width: 666px) {
-    #bigEmail-container {
-        display: none;
-    }
+  #bigEmail-container {
+    display: none;
+  }
 }
 
+.coloured-text {
+  /* Fallback: create a linear gradient. */
+  background-color: black;
+  background-image: linear-gradient(45deg, black 50%, orange 50%);
+
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background-image: conic-gradient(45deg, orange 50%, black 50%);
+
+  /* Set thee background size and repeat properties. */
+  background-size: 33%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: coloured-text-animation-rev 0.75s ease forwards;
+}
+
+.coloured-text:hover {
+  animation: coloured-text-animation 0.5s ease-in forwards;
+}
+
+@keyframes coloured-text-animation {
+  0% {
+    background-size: 32%;
+    background-position: 0 0;
+  }
+  40% {
+    background-size: 32%;
+  }
+  80% {
+    background-position: 100% 2em;
+  }
+  100% {
+    background-size: 550%;
+    background-position: 70% 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes coloured-text-animation-rev {
+  0% {
+    background-size: 500%;
+    background-position: 120% 1em;
+  }
+  40% {
+    background-position: 100% 2em;
+  }
+  80% {
+    background-size: 32%;
+  }
+  100% {
+    background-size: 70%;
+    background-position: -2% 0;
+  }
+}

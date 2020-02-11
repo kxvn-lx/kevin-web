@@ -1,4 +1,5 @@
 import React from "react"
+import Emoji from "../components/emoji"
 
 const Main = () => {
     return (
@@ -26,7 +27,7 @@ const Main = () => {
                 part-time, full-time job. Available for freelance and speaking opportunities at <a href="mailto:kevin.laminto@gmail.com">kevin.laminto@gmail.com</a>
             </p>
             <p>
-                📌  Located in Melbourne, Australia.
+                <Emoji symbol="📌" label="red pin"/>  Located in Melbourne, Australia.
             </p>
         </div>
     )

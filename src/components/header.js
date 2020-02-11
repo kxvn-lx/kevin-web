@@ -6,11 +6,13 @@ const Header = () => (
     <div className="bg-container">
       <div className="inner-header">
         <div className="logo">
-          <Link to="/">Kevin Laminto</Link>
+          <p className="coloured-text">
+            <Link to="/">Kevin Laminto</Link>
+          </p>
         </div>
         <div className="navigation">
           <nav>
-            <a href="https://github.com/kxvn-lx/" target="_blank" rel="noopener">Github</a>
+            <a href="https://github.com/kxvn-lx/" target="_blank" rel="noopener noreferrer">Github</a>
           </nav>
         </div>
       </div>
