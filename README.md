@@ -9,4 +9,5 @@ Also part of my study of ReactJS and its framework.
  - [ ] Code cleanup 🧼
  - [ ] Night mode 🌙
  - [ ] Add coloured main texts
+ - [ ] Add mobile support
  - [ ] ...
