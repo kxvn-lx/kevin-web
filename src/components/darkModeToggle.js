@@ -20,7 +20,7 @@ const IconWrapper = styled.div`
 `
 
 const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
     <>
@@ -28,15 +28,14 @@ const DarkModeToggle = () => {
         {({ toggleTheme }) => (
             <ToggleWrapper
             onClick={() => {
-                toggleTheme(darkMode ? "dark" : "light")
+                toggleTheme(darkMode ? "light" : "dark")
                 setDarkMode(!darkMode)
             }}
             >
             <IconWrapper>
                 <img
-                    class={darkMode ? "dark-mode" : "light-mode"}
-                    src={darkMode ? moon : sun}
-                    alt={darkMode ? "dark mode" : "light mode"}
+                    src={darkMode ? sun : moon}
+                    alt={darkMode ? "light mode" : "dark mode"}
                 />
             </IconWrapper>
             </ToggleWrapper>
