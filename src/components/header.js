@@ -1,6 +1,9 @@
 import { Link } from "gatsby"
 import React from "react"
 
+// Components
+import DarkModeToggle from "./darkModeToggle"
+
 const Header = () => (
   <header>
     <div className="bg-container">
@@ -13,6 +16,7 @@ const Header = () => (
         <div className="navigation">
           <nav>
             <a href="https://github.com/kxvn-lx/" target="_blank" rel="noopener noreferrer">Github</a>
+            <DarkModeToggle />
           </nav>
         </div>
       </div>

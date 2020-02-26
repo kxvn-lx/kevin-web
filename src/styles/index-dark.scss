@@ -1,0 +1,74 @@
+$backgroundColour: #1a1a1a;
+$primaryTextColour: #f5f5f5;
+$primaryTextColourHover: orange;
+
+.dark-mode {
+    fill: white !important;
+}
+
+.light-mode {
+    color: white;
+}
+
+html,
+body.dark,
+body.dark header {
+  background-color: $backgroundColour;
+  color: $primaryTextColour;
+}
+
+body.dark {
+  header {
+    .inner-header {
+      .logo {
+        a {
+          color: $primaryTextColour;
+        }
+      }
+
+      .navigation {
+        nav {
+          a {
+            color: $primaryTextColour;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    p {
+      a {
+        opacity: 0.8;
+        color: $primaryTextColour;
+        border-bottom: 1px solid $primaryTextColour;
+      }
+
+      a:hover {
+        color: $primaryTextColourHover;
+        border-color: $primaryTextColourHover;
+      }
+    }
+  }
+
+  footer {
+    .bg-container {
+      border-top: #fae4ae 1px solid;
+      div {
+        p {
+          a {
+            color: $primaryTextColour;
+            opacity: 0.8;
+            border-bottom: 1px solid $primaryTextColour;
+          }
+
+          a:hover {
+            opacity: 1;
+            color: $primaryTextColourHover;
+            border-color: $primaryTextColourHover;
+          }
+        }
+      }
+    }
+  }
+}

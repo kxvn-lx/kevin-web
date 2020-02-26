@@ -32,7 +32,7 @@ const Footer = () => {
                         Developed with <Emoji symbol="❤️" label="red heart"/> by Kevin Laminto.
                         <br />
                         <span>
-                            version alpha
+                            100% Pure ReactJS  <Emoji symbol="⚛️" label="ReactJS Logo"/>.
                         </span>
                     </p>
                 </div>

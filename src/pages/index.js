@@ -1,6 +1,7 @@
 import React from "react"
 
 import "../styles/index.scss"
+import "../styles/index-dark.scss"
 import SEO from "../components/seo"
 
 // Import Components
