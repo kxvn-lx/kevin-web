@@ -3,14 +3,13 @@ $primaryTextColour: #f5f5f5;
 $primaryTextColourHover: orange;
 
 .dark-mode {
-    fill: white !important;
+  fill: white !important;
 }
 
 .light-mode {
-    color: white;
+  color: white;
 }
 
-html,
 body.dark,
 body.dark header {
   background-color: $backgroundColour;

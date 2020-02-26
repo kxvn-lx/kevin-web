@@ -7,7 +7,8 @@ Also part of my study of ReactJS and its framework.
 
  - [ ] Minor bugfixes
  - [ ] Code cleanup 🧼
- - [ ] Night mode 🌙
+ - [x] Night mode 🌙
  - [x] Add coloured main texts
  - [x] Add mobile support
+ - [] Add analytics
  - [ ] ...
