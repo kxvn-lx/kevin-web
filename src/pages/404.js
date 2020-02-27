@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 // Import Components
 import Header from "../components/header"
-import Main_Alt from "../components/main-alt"
+import MainAlt from "../components/main-alt"
 import Footer from "../components/footer"
 import BigEmail from "../components/bigEmail"
 
@@ -18,7 +18,7 @@ const NotFoundPage = () => (
         title="404"
       />
       <Header />
-      <Main_Alt
+      <MainAlt
         title="404"
         subtitle=""
         body="The page you are looking for seems to be gone! Perhaps go back and try again?"

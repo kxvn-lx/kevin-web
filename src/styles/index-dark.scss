@@ -1,5 +1,5 @@
 $backgroundColour: #1a1a1a;
-$primaryTextColour: #f5f5f5;
+$primaryTextColour: #e7e7e7;
 $primaryTextColourHover: orange;
 
 .dark-mode {
@@ -52,7 +52,7 @@ body.dark {
 
   footer {
     .bg-container {
-      border-top: #fae4ae 1px solid;
+      border-top: $primaryTextColour 1px solid;
       div {
         p {
           a {

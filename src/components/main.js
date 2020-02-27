@@ -1,9 +1,11 @@
 import React from "react"
 import Emoji from "../components/emoji"
+import BigName from "../components/bigName"
 
 const Main = () => {
     return (
         <div className="main container">
+            <BigName />
             <h1>
                 I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default.
             </h1>

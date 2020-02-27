@@ -9,9 +9,9 @@ const Header = () => (
     <div className="bg-container">
       <div className="inner-header">
         <div className="logo">
-          <p className="coloured-text">
+          {/* <p className="coloured-text">
             <Link to="/">Kevin Laminto</Link>
-          </p>
+          </p> */}
         </div>
         <div className="navigation">
           <nav>
