@@ -10,7 +10,7 @@ const ToggleWrapper = styled.div`
 `
 
 const IconWrapper = styled.div`
-    width: 1.2rem;
+    width: 1rem;
     display: inline-block;
     vertical-align: middle;
     -webkit-user-select: none; /* Safari */        

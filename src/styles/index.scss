@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:700|Roboto:300,400,500&display=swap");
 
 // Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
-
-$font: 'Source Sans Pro';
+$font: "Roboto";
+$fontSerif: "PT Serif";
 
 // Colours
-$backgroundColour: #e1e3dd;
-$primaryTextColour: #2c2c2c;
+$backgroundColour: #f4f4f4;
+$primaryTextColour: #111111;
 $primaryTextColourHover: orange;
 
 * {
@@ -16,7 +16,7 @@ $primaryTextColourHover: orange;
 
 // styles for selection area.
 ::selection {
-  background-color: orange;
+  background-color: #AAFEF7;
   color: black;
 }
 
@@ -25,8 +25,8 @@ body {
   background-color: $backgroundColour;
   overflow-x: hidden;
   font-family: $font;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 300;
   color: $primaryTextColour;
 }
 
@@ -82,7 +82,7 @@ strong {
 /* =================== HEADER ===================== */
 /* ================================================ */
 header {
-  background-color: $backgroundColour;
+  // background-color: $backgroundColour;
   height: 80px;
   width: 100%;
   padding-top: 30px;
@@ -182,7 +182,6 @@ header {
   }
 }
 
-
 /* ================================================ */
 /* ==================== FOOTER ==================== */
 /* ================================================ */
@@ -265,14 +264,18 @@ footer {
   bottom: 200px;
   left: -90px;
 
-  a {
-    text-decoration: none;
-    transition: 0.25s;
-    color: black;
-  }
+  p {
+    font-size: 1.4rem;
 
-  a:hover {
-    color: $primaryTextColourHover;
+    a {
+      text-decoration: none;
+      transition: 0.25s;
+      color: black;
+    }
+  
+    a:hover {
+      color: $primaryTextColourHover;
+    }
   }
 }
 
@@ -435,6 +438,8 @@ _:future,
 /* ================================================ */
 .big-name {
   font-size: 5em;
+  font-weight: 700;
   line-height: unset !important;
   pointer-events: none;
+  font-family: $fontSerif;
 }
