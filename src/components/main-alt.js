@@ -3,7 +3,7 @@ import React from "react"
 const Main_alt = props => {
     return (
         <div className="main container main-alt">
-            <h1>
+            <h1 className="coloured-text big-name">
                 {props.title}
             </h1>
             <h3>
