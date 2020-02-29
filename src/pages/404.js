@@ -17,7 +17,7 @@ const NotFoundPage = () => (
         lang="us"
         title="404"
       />
-      <Header />
+      <Header logoHidden="" />
       <MainAlt
         title="404"
         subtitle=""

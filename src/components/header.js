@@ -1,17 +1,17 @@
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 
 // Components
 import DarkModeToggle from "./darkModeToggle"
 
-const Header = () => (
+const Header = props => (
   <header>
     <div className="bg-container">
       <div className="inner-header">
         <div className="logo">
-          {/* <p className="coloured-text">
+          <p className={`coloured-text ${props.logoHidden}`}>
             <Link to="/">Kevin Laminto</Link>
-          </p> */}
+          </p>
         </div>
         <div className="navigation">
           <nav>

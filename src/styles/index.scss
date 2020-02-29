@@ -20,6 +20,10 @@ $primaryTextColourHover: orange;
   color: black;
 }
 
+.hidden {
+  display: none;
+}
+
 html,
 body {
   background-color: $backgroundColour;

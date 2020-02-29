@@ -20,7 +20,7 @@ const Main = () => {
                 but also keeping a strong focus on accessibility, user experience, usability, ethics, diversity and inclusion.
             </p>
             <p>
-                My favourite project I have done so far is One Stop Solutions. A business where users can find almost all solutions to their problems 
+                My favourite project I have done so far is One Stop Solutions (Part of Monash University's Industry Experience project). A business where users can find almost all solutions to their problems 
                 on a single website. I was the team leader and lead front-end developer. Hence I am responsible in the productivity and project management
                 of the whole team (of 6) and making sure the system follows a good UX design.
             </p>
