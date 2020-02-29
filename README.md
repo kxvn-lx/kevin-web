@@ -5,10 +5,11 @@ Also part of my study of ReactJS and its framework.
 
 ## Todos:
 
- - [ ] Minor bugfixes
- - [ ] Code cleanup 🧼
+ - [x] Minor bugfixes
+ - [x] Code cleanup 🧼
  - [x] Night mode 🌙
  - [x] Add coloured main texts
  - [x] Add mobile support
- - [] Add analytics
+ - [ ] Add analytics
+ - [ ] Blog?
  - [ ] ...

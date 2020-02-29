@@ -54,7 +54,7 @@ strong {
 @media only screen and (max-width: 666px) {
   html,
   body {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -127,24 +127,25 @@ header {
           }
         }
 
-        a:hover {
-          position: relative;
-          animation: hover-animation 1s forwards ease;
-        }
-
-        a:hover:after {
-          content: "";
-          display: block;
-          width: 100%;
-          height: 3px;
-          background-image: linear-gradient(45deg, black 50%, orange 50%);
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          background-position: 100% 0;
-          position: absolute;
-          bottom: -0.25em;
-          right: 0;
-          animation: link-animation 1s ease-out forwards;
+        @media not all and (pointer: coarse) {
+          a:hover {
+            position: relative;
+            animation: hover-animation 1s forwards ease;
+          }
+          a:hover:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-image: linear-gradient(45deg, black 50%, orange 50%);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: 100% 0;
+            position: absolute;
+            bottom: -0.25em;
+            right: 0;
+            animation: link-animation 1s ease-out forwards;
+          }
         }
       }
     }
@@ -183,9 +184,11 @@ header {
       border-bottom: 1px solid $primaryTextColour;
     }
 
-    a:hover {
-      color: $primaryTextColourHover;
-      border-color: $primaryTextColourHover;
+    @media not all and (pointer: coarse) {
+      a:hover {
+        color: $primaryTextColourHover;
+        border-color: $primaryTextColourHover;
+      }
     }
   }
 }
@@ -229,9 +232,11 @@ footer {
           border-bottom: 1px solid $primaryTextColour;
         }
 
-        a:hover {
-          color: $primaryTextColourHover;
-          border-color: $primaryTextColourHover;
+        @media not all and (pointer: coarse) {
+          a:hover {
+            color: $primaryTextColourHover;
+            border-color: $primaryTextColourHover;
+          }
         }
 
         span {
@@ -273,6 +278,7 @@ footer {
   left: -90px;
 
   p {
+    font-family: $fontSerif;
     font-size: 1.2rem;
 
     a {
