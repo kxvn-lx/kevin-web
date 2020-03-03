@@ -110,6 +110,7 @@ header {
 
     .logo {
       a {
+        font-family: $fontSerif;
         font-weight: 600;
         font-size: 1.3rem;
         text-decoration: none;
@@ -459,7 +460,7 @@ _:future,
   font-weight: 700;
   line-height: unset !important;
   pointer-events: none;
-  font-family: $fontSerif;
+  font-family: $fontSerif !important;
 }
 
 @keyframes fadein {
