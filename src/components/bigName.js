@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function bigName() {
-    return (
-        <div className="container">
-            <p className="coloured-text big-name">
-                Kevin laminto
-            </p>
-        </div>
-    )
-}
+const bigName = props => (
+    <div className="container">
+    <p className="coloured-text big-name">
+        {props.name}
+    </p>
+</div>
+);
+
+export default bigName

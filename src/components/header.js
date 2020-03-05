@@ -15,13 +15,19 @@ const Header = props => (
         </div>
         <div className="navigation">
           <nav>
-            <a href="https://github.com/kxvn-lx/" target="_blank" rel="noopener noreferrer">Github</a>
-            <DarkModeToggle />
+            <ul>
+              <li>
+                <Link to="/experience">Experience</Link>
+              </li>
+              <li>
+                <DarkModeToggle />
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
     </div>
-  </header> 
+  </header>
 )
 
 export default Header

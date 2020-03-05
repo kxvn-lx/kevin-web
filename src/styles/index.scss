@@ -76,6 +76,20 @@ strong {
   margin-right: auto;
 }
 
+a {
+  text-decoration: none;
+  transition: 0.25s;
+  color: $primaryTextColour;
+  border-bottom: 1px solid $primaryTextColour;
+}
+
+@media not all and (pointer: coarse) {
+  a:hover {
+    color: $primaryTextColourHover;
+    border-color: $primaryTextColourHover;
+  }
+}
+
 /* ================================================ */
 /* ================== KEYFRAMES =================== */
 /* ================================================ */
@@ -93,6 +107,26 @@ strong {
 /* ================================================ */
 /* =================== HEADER ===================== */
 /* ================================================ */
+
+// Fallback for smaller device - change the layout positions.
+@media screen and (max-width: 900px) {
+  header {
+    .navigation {
+      nav {
+        ul {
+          li {
+            display: block !important;
+            text-align: right;
+            margin-left: 0;
+            margin-top: 1.1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 header {
   // background-color: $backgroundColour;
   height: 80px;
@@ -110,6 +144,7 @@ header {
 
     .logo {
       a {
+        border: none;
         font-family: $fontSerif;
         font-weight: 600;
         font-size: 1.3rem;
@@ -121,35 +156,43 @@ header {
 
     .navigation {
       nav {
-        a {
-          margin: 0 20px;
-          text-decoration: none;
-          letter-spacing: 1.75px;
-          color: $primaryTextColour;
-          font-size: 0.85rem;
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-
-        @media not all and (pointer: coarse) {
-          a:hover {
-            position: relative;
-            animation: hover-animation 1s forwards ease;
-          }
-          a:hover:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 3px;
-            background-image: linear-gradient(45deg, black 50%, orange 50%);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-position: 100% 0;
-            position: absolute;
-            bottom: -0.25em;
-            right: 0;
-            animation: link-animation 1s ease-out forwards;
+        ul {
+          li {
+            display: inline-block;
+            margin-left: 2em;
+            list-style: none;
+            a {
+              border: none;
+              margin: 0 20px;
+              text-decoration: none;
+              letter-spacing: 1.75px;
+              color: $primaryTextColour;
+              font-size: 15px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+    
+            @media not all and (pointer: coarse) {
+              a:hover {
+                position: relative;
+                animation: hover-animation 1s forwards ease;
+              }
+              a:hover:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-image: linear-gradient(45deg, black 50%, orange 50%);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: 100% 0;
+                position: absolute;
+                bottom: -0.25em;
+                right: 0;
+                animation: link-animation 1s ease-out forwards;
+              }
+            }
           }
         }
       }
@@ -203,7 +246,7 @@ header {
 /* ================================================ */
 footer {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.80rem;
   overflow: hidden;
   padding-bottom: 3rem;
   .bg-container {
@@ -456,12 +499,31 @@ _:future,
 /* =================== BIG NAME =================== */
 /* ================================================ */
 .big-name {
-  font-size: 5em;
+  font-size: 4.8em;
   font-weight: 700;
   line-height: unset !important;
   pointer-events: none;
   font-family: $fontSerif !important;
 }
+
+@media only screen and (max-width: 666px) {
+  .big-name {
+    font-size: 4.5em;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .big-name {
+    font-size: 3.8em;
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  .big-name {
+    font-size: 3em;
+  }
+}
+
 
 @keyframes fadein {
   from {

@@ -6,19 +6,19 @@ import SEO from "../components/seo"
 
 // Import Components
 import Header from "../components/header"
-import Main from "../components/home/main"
+import Main from "../components/experience/experience"
 import Footer from "../components/footer"
 import BigEmail from "../components/bigEmail"
 
-const IndexPage = () => (
+const ExperiencePage = () => (
   <>
   <div>
     <SEO 
       description = "I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default."
       lang = "us"
-      title = "Home"
+      title = "Experience"
     />
-    <Header logoHidden="hidden"/>
+    <Header logoHidden=""/>
     <Main />
     <Footer />
     <BigEmail />
@@ -26,4 +26,4 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage
+export default ExperiencePage
