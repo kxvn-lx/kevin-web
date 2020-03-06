@@ -21,7 +21,7 @@ const Main = () => {
             </p>
             <p>
                 My favourite project I have done so far is One Stop Solutions (Part of Monash University's Industry Experience project). A business where users can find almost all solutions to their problems 
-                on a single website. I was the team leader and lead front-end developer. Hence I am responsible in the productivity and project management
+                on a single website. I was the team leader and lead front-end engineer. Hence I am responsible in the productivity and project management
                 of the whole team (of 6) and making sure the system follows a good UX design.
             </p>
             <p>

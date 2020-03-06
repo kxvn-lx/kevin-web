@@ -18,7 +18,7 @@ const ExperiencePage = () => (
       lang = "us"
       title = "Experience"
     />
-    <Header logoHidden=""/>
+    <Header/>
     <Main />
     <Footer />
     <BigEmail />

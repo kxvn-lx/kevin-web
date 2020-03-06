@@ -5,7 +5,8 @@ import React from "react"
 import DarkModeToggle from "./darkModeToggle"
 
 const Header = props => (
-  <header>
+
+  <header style={{backgroundColor: props.bgColor}}>
     <div className="bg-container">
       <div className="inner-header">
         <div className="logo">
