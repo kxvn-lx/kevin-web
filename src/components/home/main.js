@@ -1,6 +1,6 @@
 import React from "react"
 import Emoji from "../emoji"
-import BigName from "../bigName"
+import BigName from "../bigName/bigName.js"
 
 const Main = () => {
     return (

@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif:700|Roboto:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500&display=swap");
 
 // Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
-$font: "Roboto";
-$fontSerif: "PT Serif";
+$font: "Open Sans", sans-serif;
+$fontSerif: "Playfair Display", serif;
 
 // Colours
 $backgroundColour: #f4f4f4;
@@ -126,7 +126,6 @@ a {
   }
 }
 
-
 header {
   background-color: $backgroundColour;
   height: 80px;
@@ -172,7 +171,7 @@ header {
                 margin-right: 0;
               }
             }
-    
+
             @media not all and (pointer: coarse) {
               a:hover {
                 position: relative;
@@ -246,7 +245,7 @@ header {
 /* ================================================ */
 footer {
   display: block;
-  font-size: 0.80rem;
+  font-size: 0.8rem;
   overflow: hidden;
   padding-bottom: 3rem;
   .bg-container {
@@ -312,39 +311,6 @@ footer {
         margin-top: 20px;
       }
     }
-  }
-}
-
-/* ================================================ */
-/* ================== BIG EMAIL =================== */
-/* ================================================ */
-#bigEmail-container {
-  font-weight: 400;
-  transform: rotate(-90deg);
-  position: fixed;
-  bottom: 200px;
-  left: -90px;
-
-  p {
-    font-family: $fontSerif;
-    font-size: 1.2rem;
-
-    a {
-      border: none;
-      text-decoration: none;
-      transition: 0.25s;
-      color: black;
-    }
-
-    a:hover {
-      color: $primaryTextColourHover;
-    }
-  }
-}
-
-@media only screen and (max-width: 666px) {
-  #bigEmail-container {
-    display: none;
   }
 }
 
@@ -495,36 +461,6 @@ _:future,
     background-position: -2% 0;
   }
 }
-
-/* ================================================ */
-/* =================== BIG NAME =================== */
-/* ================================================ */
-.big-name {
-  font-size: 4.8em;
-  font-weight: 700;
-  line-height: unset !important;
-  pointer-events: none;
-  font-family: $fontSerif !important;
-}
-
-@media only screen and (max-width: 666px) {
-  .big-name {
-    font-size: 4.5em;
-  }
-}
-
-@media only screen and (max-width: 444px) {
-  .big-name {
-    font-size: 3.8em;
-  }
-}
-
-@media only screen and (max-width: 333px) {
-  .big-name {
-    font-size: 3em;
-  }
-}
-
 
 @keyframes fadein {
   from {

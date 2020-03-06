@@ -2,7 +2,7 @@ import React from "react"
 import "../experience/experience.scss"
 
 // Components
-import BigName from "../bigName"
+import BigName from "../bigName/bigName.js"
 
 const Main = () => {
   return (

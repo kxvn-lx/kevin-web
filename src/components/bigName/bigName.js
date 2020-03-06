@@ -1,4 +1,5 @@
 import React from 'react'
+import "../bigName/bigName.scss"
 
 const bigName = props => (
     <div className="container">
