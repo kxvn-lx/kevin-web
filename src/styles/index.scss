@@ -378,6 +378,39 @@ footer {
 }
 
 /* ================================================ */
+/* ================== BIG EMAIL =================== */
+/* ================================================ */
+#bigEmail-container {
+  font-weight: 400;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom: 200px;
+  left: -90px;
+
+  p {
+    font-family: $fontSerif;
+    font-size: 1.2rem;
+
+    a {
+      border: none;
+      text-decoration: none;
+      transition: 0.25s;
+      color: black;
+    }
+
+    a:hover {
+      color: $primaryTextColourHover;
+    }
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  #bigEmail-container {
+    display: none;
+  }
+}
+
+/* ================================================ */
 /* ================== FALLBACKS =================== */
 /* ================================================ */
 
