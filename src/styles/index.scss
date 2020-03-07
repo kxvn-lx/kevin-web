@@ -134,6 +134,8 @@ ul, ol {
 // Fallback for smaller device - change the layout positions.
 @media screen and (max-width: 900px) {
   header {
+    position: relative;
+    top: 30px;
     .navigation {
       nav {
         ul {
@@ -154,7 +156,6 @@ header {
   height: 80px;
   width: 100%;
   padding-top: 30px;
-  top: 0px;
   z-index: 10;
 
   .inner-header {

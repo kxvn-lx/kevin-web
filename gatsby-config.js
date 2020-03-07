@@ -3,6 +3,7 @@ module.exports = {
     title: `Kevin-web`,
     description: `I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default.`,
     author: `Kevin Laminto <kevin.laminto@gmail.com>`,
+    siteUrl: `https://www.kevinweb.tech`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -60,5 +61,6 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }

@@ -11,7 +11,7 @@ const Main = () => {
         <h1>ESPER Satellite Imagery</h1>
         <p>
           ESPER Satellite Imagery is a startup company of which me and my
-          friends build top develop a surveying solutions for agriculture and
+          friends build and develop a surveying solutions for agriculture and
           mining, using spaceborne platforms to capture hyperspectral imagery.
           Hyperspectral imagery is an imaging technique which uses a specialised
           camera to capture images in hundreds of infrared wavelengths.
