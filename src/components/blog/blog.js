@@ -42,7 +42,9 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        allMarkdownRemark {
+        allMarkdownRemark (
+          sort: { fields: [frontmatter___date], order: DESC }
+        ) {
           edges {
             node {
               id
