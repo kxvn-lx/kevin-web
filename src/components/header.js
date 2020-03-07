@@ -17,8 +17,10 @@ const Header = props => (
           <nav>
             <ul>
               <li>
-                <Link to="/blog">Blog</Link>
                 <Link to="/experience">Experience</Link>
+              </li>
+              <li>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
                 <DarkModeToggle />
