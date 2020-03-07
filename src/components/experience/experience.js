@@ -2,12 +2,11 @@ import React from "react"
 import "../experience/experience.scss"
 
 // Components
-import BigName from "../bigName/bigName.js"
-
+import Emoji from "../emoji"
 const Main = () => {
   return (
     <div className="main container">
-      <BigName name="Experience" />
+      <h1 className="page-title">Experience</h1>
 
       <div className="experience-wrapper">
         <h4>Sep 2019 - Present</h4>

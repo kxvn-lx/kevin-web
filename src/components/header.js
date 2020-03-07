@@ -5,8 +5,7 @@ import React from "react"
 import DarkModeToggle from "./darkModeToggle"
 
 const Header = props => (
-
-  <header style={{backgroundColor: props.bgColor}}>
+  <header style={{ backgroundColor: props.bgColor }}>
     <div className="bg-container">
       <div className="inner-header">
         <div className="logo">
@@ -18,6 +17,7 @@ const Header = props => (
           <nav>
             <ul>
               <li>
+                <Link to="/blog">Blog</Link>
                 <Link to="/experience">Experience</Link>
               </li>
               <li>

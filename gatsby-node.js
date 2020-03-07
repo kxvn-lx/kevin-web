@@ -20,6 +20,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               date
               author
               author_email
+              tags
             }
           }
         }

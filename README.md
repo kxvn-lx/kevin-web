@@ -11,5 +11,6 @@ Also part of my study of ReactJS and its framework.
  - [x] Add coloured main texts
  - [x] Add mobile support
  - [ ] Add analytics
- - [ ] Blog?
+ - [x] Blog?
+ - [ ] Blog tags
  - [ ] ...

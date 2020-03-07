@@ -17,6 +17,35 @@ body.dark header {
 }
 
 body.dark {
+
+  .icon {
+    border: none;
+
+    svg {
+      fill: $primaryTextColour !important;
+    }
+  }
+
+  code {
+    word-break: break-all;
+    background-color: darkslategray;
+    padding: 1.5px;
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+  }
+
+  a {
+    color: $primaryTextColour;
+    border-bottom: 1px solid $primaryTextColour;
+  }
+  
+  @media not all and (pointer: coarse) {
+    a:hover {
+      color: $primaryTextColourHover;
+      border-color: $primaryTextColourHover;
+    }
+  }
+
   header {
     background-color: transparent;
     .inner-header {

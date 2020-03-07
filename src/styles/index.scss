@@ -24,13 +24,17 @@ $primaryTextColourHover: orange;
   display: none;
 }
 
+html {
+  background-color: transparent;
+}
+
 html,
 body {
   background-color: $backgroundColour;
   overflow-x: hidden;
   font-family: $font;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
   color: $primaryTextColour;
   transition: 0.25s;
   -webkit-transition: 0.25s;
@@ -42,17 +46,27 @@ body {
   animation: fadein 0.5s;
 }
 
+body.light {
+  code {
+    word-break: break-all;
+    background-color: pink;
+    padding: 1.5px;
+    border: 1px solid pink;
+    border-radius: 5px;
+  }
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  // font-weight: 400;
 }
 
 strong {
-  font-weight: 400;
+  // font-weight: 400;
 }
 
 @media only screen and (max-width: 666px) {
@@ -63,14 +77,14 @@ strong {
 }
 
 .bg-container {
-  width: 80vw;
-  min-width: 80vw;
+  width: 70vw;
+  min-width: 70vw;
   margin: 0 auto;
 }
 
 .container {
-  width: 80vw;
-  max-width: 850px;
+  width: 70vw;
+  max-width: 700px;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -88,6 +102,10 @@ a {
     color: $primaryTextColourHover;
     border-color: $primaryTextColourHover;
   }
+}
+
+.page-title {
+  font-family: $fontSerif !important;
 }
 
 /* ================================================ */
@@ -381,7 +399,7 @@ footer {
 /* ================== BIG EMAIL =================== */
 /* ================================================ */
 #bigEmail-container {
-  font-weight: 400;
+  font-weight: 600;
   transform: rotate(-90deg);
   position: fixed;
   bottom: 200px;
@@ -541,5 +559,18 @@ _:future,
   }
   to {
     opacity: 1;
+  }
+}
+
+/* ================================================ */
+/* ================== BLOG ======================== */
+/* ================================================ */
+.blog-wrapper {
+  border-bottom: 1px solid;
+  border-color: rgba(128, 128, 128, 0.5);
+  h1 {
+  }
+
+  h5 {
   }
 }
