@@ -62,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  // font-weight: 400;
+  margin-bottom: 0.5em;
 }
 
 strong {
@@ -108,6 +108,11 @@ a {
   font-family: $fontSerif !important;
 }
 
+ul, ol {
+  margin-bottom: 2em;
+  position: relative;
+  left: 2em;
+}
 /* ================================================ */
 /* ================== KEYFRAMES =================== */
 /* ================================================ */
@@ -149,7 +154,6 @@ header {
   height: 80px;
   width: 100%;
   padding-top: 30px;
-  position: fixed;
   top: 0px;
   z-index: 10;
 
@@ -220,11 +224,12 @@ header {
 /* ===================== MAIN ===================== */
 /* ================================================ */
 .main {
-  margin-top: 350px;
+  margin-top: 300px;
   margin-bottom: 4em;
 
   h1,
-  p {
+  p,
+  ol {
     margin-bottom: 2rem;
   }
 
@@ -558,18 +563,5 @@ _:future,
   }
   to {
     opacity: 1;
-  }
-}
-
-/* ================================================ */
-/* ================== BLOG ======================== */
-/* ================================================ */
-.blog-wrapper {
-  border-bottom: 1px solid;
-  border-color: rgba(128, 128, 128, 0.5);
-  h1 {
-  }
-
-  h5 {
   }
 }

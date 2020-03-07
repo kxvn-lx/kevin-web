@@ -1,7 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-
-// Components
 import { StaticQuery, graphql } from "gatsby"
 
 import "../blog/blog.scss"
@@ -37,6 +35,8 @@ const BlogHome = ({ data }) => {
     </>
   )
 }
+
+
 
 export default props => (
   <StaticQuery

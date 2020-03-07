@@ -18,7 +18,7 @@ const IndexPage = () => (
       lang = "us"
       title = "Home"
     />
-    <Header logoHidden="hidden" bgColor="transparent"/>
+    <Header logoHidden="hidden"/>
     <Main />
     <Footer />
     <BigEmail />

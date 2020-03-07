@@ -1,15 +1,13 @@
 import React from "react"
 import "../experience/experience.scss"
 
-// Components
-import Emoji from "../emoji"
 const Main = () => {
   return (
     <div className="main container">
       <h1 className="page-title">Experience</h1>
 
       <div className="experience-wrapper">
-        <h4>Sep 2019 - Present</h4>
+        <h5>Sep 2019 - Present</h5>
         <h1>ESPER Satellite Imagery</h1>
         <p>
           ESPER Satellite Imagery is a startup company of which me and my
@@ -34,7 +32,7 @@ const Main = () => {
       </div>
 
       <div className="experience-wrapper">
-        <h4>July 2019 - Feb 2020</h4>
+        <h5>July 2019 - Feb 2020</h5>
         <h1>One Stop Solutions</h1>
         <p>
             This was an Industry Experience project I did, as part of Monash University's final year graduate program.

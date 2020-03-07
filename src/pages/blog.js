@@ -18,7 +18,7 @@ const BlogPage = () => (
       lang = "us"
       title = "Blog"
     />
-    <Header logoHidden="" bgColor=""/>
+    <Header />
     <BlogHome />
     <Footer />
     <BigEmail />

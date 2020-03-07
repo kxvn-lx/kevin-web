@@ -16,8 +16,8 @@ Hence this is what i do, to fix the solution. And, to also match the colour prof
 
 1. Download [this](https://gist.github.com/adaugherity/7435890 "patch") file and save it to your desktop.
 2. Open terminal, type ``` ruby ``` and drag the file to your terminal, and press enter.
-
 this will create a vendor file, in your root folder. Now before you do anything, make sure to **disable** SIP. You can enable it again once the procedure is completed. Link to do so, will be found [here](https://www.macworld.co.uk/how-to/mac/how-turn-off-mac-os-x-system-integrity-protection-rootless-3638975/).
-
 3. Once it is disabled, head to this directory ``` SSD/System/Library/Displays/Contents/Resources/Overrides ``` and paste it there.
 4. Reboot your system, and it should be fixed now!
+
+Should there be any questions, feel free to email me (:
