@@ -16,17 +16,6 @@ export default function blogTemplate({ data }) {
 
   return (
     <>
-      {/* <div>
-        <Link to="/blog">Back</Link>
-        <hr />
-
-        <h1>{blog.frontmatter.title}</h1>
-        <h4>
-          Posted by {blog.frontmatter.author} on {blog.frontmatter.date}
-        </h4>
-        <div dangerouslySetInnerHTML={{ __html: blog.html }} />
-      </div> */}
-
       <SEO
         description="I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default."
         lang="us"
@@ -44,7 +33,7 @@ export default function blogTemplate({ data }) {
           <h1>{blog.frontmatter.title}</h1>
           <div className="tags-wrapper">
             <p>
-              {blog.frontmatter.tags.map((tag, index) => (
+              {blog.frontmatter.tags.map((tag) => (
                 <span>{tag}</span>
               ))}
             </p>
@@ -67,7 +56,6 @@ export const blogQuery = graphql`
       frontmatter {
         path
         title
-        author
         date
         tags
       }

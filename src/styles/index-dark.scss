@@ -11,18 +11,27 @@ $primaryTextColourHover: orange;
 }
 
 body.dark,
-body.dark {
+body.dark html {
   background-color: $backgroundColour;
   color: $primaryTextColour;
 }
 
 body.dark {
+  .featured-blog-wrapper {
+    background-color: #11171F;
+  }
 
   .icon {
     border: none;
 
     svg {
       fill: $primaryTextColour !important;
+    }
+  }
+
+  .icon:hover {
+    svg {
+      fill: $primaryTextColourHover !important;
     }
   }
 
@@ -38,7 +47,7 @@ body.dark {
     color: $primaryTextColour;
     border-bottom: 1px solid $primaryTextColour;
   }
-  
+
   @media not all and (pointer: coarse) {
     a:hover {
       color: $primaryTextColourHover;

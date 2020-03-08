@@ -5,6 +5,7 @@ title: "Force RGB mode on monitor with macbook."
 author: "Kevin Laminto"
 author_email: "kevin.laminto@gmail.com"
 tags: ["utility", "photography"]
+featured: "0"
 ---
 
 The problem arise when I just got a new monitor for my macbook.

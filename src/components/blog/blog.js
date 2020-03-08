@@ -5,11 +5,16 @@ import { StaticQuery, graphql } from "gatsby"
 import "../blog/blog.scss"
 import "../../styles/index.scss"
 
+// Components
+import FeaturedBlog from "../featuredBlog/featuredBlog"
+
 const BlogHome = ({ data }) => {
   return (
     <>
       <div className="main container">
         <h1 className="page-title">Blog</h1>
+        
+        <FeaturedBlog />
 
         {data.allMarkdownRemark.edges.map(blog => (
 
@@ -23,7 +28,7 @@ const BlogHome = ({ data }) => {
             </h1>
             <div className="tags-wrapper">
               <p>
-                {blog.node.frontmatter.tags.map((tag, index) => (
+                {blog.node.frontmatter.tags.map((tag) => (
                   <span>{tag}</span>
                 ))}
               </p>
@@ -44,6 +49,9 @@ export default props => (
       {
         allMarkdownRemark (
           sort: { fields: [frontmatter___date], order: DESC }
+          filter: {
+            frontmatter: {featured: {eq: "0"}}
+          }
         ) {
           edges {
             node {
@@ -52,9 +60,8 @@ export default props => (
                 path
                 title
                 date
-                author
-                author_email
                 tags
+                featured
               }
             }
           }

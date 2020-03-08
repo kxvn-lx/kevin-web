@@ -30,7 +30,6 @@ html {
 
 html,
 body {
-  background-color: $backgroundColour;
   overflow-x: hidden;
   font-family: $font;
   font-size: 17px;
@@ -46,6 +45,14 @@ body {
   animation: fadein 0.5s;
 }
 
+body {
+  background-color: $backgroundColour;
+}
+
+/* ================================================ */
+/* =================== SHARED ===================== */
+/* ================================================ */
+
 body.light {
   code {
     word-break: break-all;
@@ -54,6 +61,17 @@ body.light {
     border: 1px solid pink;
     border-radius: 5px;
   }
+
+  .icon:hover {
+    svg {
+      fill: $primaryTextColourHover !important;
+    }
+  }
+
+  .featured-blog-wrapper {
+    background-color: #D5ECDD;
+  }
+
 }
 
 h1,
@@ -63,10 +81,6 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.5em;
-}
-
-strong {
-  // font-weight: 400;
 }
 
 @media only screen and (max-width: 666px) {
@@ -108,7 +122,8 @@ a {
   font-family: $fontSerif !important;
 }
 
-ul, ol {
+ul,
+ol {
   margin-bottom: 2em;
   position: relative;
   left: 2em;
