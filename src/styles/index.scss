@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 
 // Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
-$font: "Open Sans", sans-serif;
-$fontSerif: "Playfair Display", serif;
+$font: 'Sen', sans-serif;
 
 // Colours
 $backgroundColour: #f4f4f4;
@@ -47,6 +46,10 @@ body {
 
 body {
   background-color: $backgroundColour;
+}
+
+.big-name {
+  font-family: $font;
 }
 
 /* ================================================ */
@@ -118,10 +121,6 @@ a {
   }
 }
 
-.page-title {
-  font-family: $fontSerif !important;
-}
-
 ul,
 ol {
   margin-bottom: 2em;
@@ -182,7 +181,7 @@ header {
     .logo {
       a {
         border: none;
-        font-family: $fontSerif;
+        font-family: $font;
         font-weight: 600;
         font-size: 1.3rem;
         text-decoration: none;
@@ -426,7 +425,7 @@ footer {
   left: -90px;
 
   p {
-    font-family: $fontSerif;
+    font-family: $font;
     font-size: 1.2rem;
 
     a {
