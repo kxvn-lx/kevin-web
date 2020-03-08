@@ -17,7 +17,7 @@ export default function blogTemplate({ data }) {
   return (
     <>
       <SEO
-        description="I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default."
+        description={blog.frontmatter.title} 
         lang="us"
         title="Blog"
       />
@@ -39,6 +39,7 @@ export default function blogTemplate({ data }) {
             </p>
           </div>
         </div>
+        
         <div className="content-wrapper">
             <div dangerouslySetInnerHTML={{ __html: blog.html }} />
           </div>

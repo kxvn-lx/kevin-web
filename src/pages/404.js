@@ -13,11 +13,11 @@ const NotFoundPage = () => (
   <>
     <div>
       <SEO
-        description="I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default."
+        description="404"
         lang="us"
         title="404"
       />
-      <Header logoHidden="" />
+      <Header />
       <MainAlt
         title="404"
         subtitle=""

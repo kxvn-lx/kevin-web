@@ -14,7 +14,7 @@ const BlogPage = () => (
   <>
   <div>
     <SEO 
-      description = "I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default."
+      description = "A collection of blogs that I occasionally dumps my writing."
       lang = "us"
       title = "Blog"
     />

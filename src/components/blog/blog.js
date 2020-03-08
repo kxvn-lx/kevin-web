@@ -7,17 +7,19 @@ import "../../styles/index.scss"
 
 // Components
 import FeaturedBlog from "../featuredBlog/featuredBlog"
+import Emoji from "../emoji"
 
 const BlogHome = ({ data }) => {
   return (
     <>
       <div className="main container">
-        <h1 className="page-title">Blog</h1>
-        
+        <h1 className="page-title">
+          <Emoji symbol="  📔 " label="notes" /> Blog
+        </h1>
+
         <FeaturedBlog />
 
         {data.allMarkdownRemark.edges.map(blog => (
-
           // The contents
           <div key={blog.node.id} className="blog-wrapper">
             <h5 className="blog-date">{blog.node.frontmatter.date}</h5>
@@ -28,30 +30,25 @@ const BlogHome = ({ data }) => {
             </h1>
             <div className="tags-wrapper">
               <p>
-                {blog.node.frontmatter.tags.map((tag) => (
+                {blog.node.frontmatter.tags.map(tag => (
                   <span>{tag}</span>
                 ))}
               </p>
             </div>
           </div>
-
         ))}
       </div>
     </>
   )
 }
 
-
-
 export default props => (
   <StaticQuery
     query={graphql`
       {
-        allMarkdownRemark (
+        allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          filter: {
-            frontmatter: {featured: {eq: "0"}}
-          }
+          filter: { frontmatter: { featured: { eq: "0" } } }
         ) {
           edges {
             node {

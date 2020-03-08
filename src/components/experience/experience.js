@@ -1,13 +1,33 @@
 import React from "react"
 import "../experience/experience.scss"
 
+// Components
+import Emoji from "../emoji"
+
+function MonthDiff(props) {
+  var dateFrom = props.dateFrom
+  var dateTo = props.dateTo
+  return (
+    dateTo.getMonth() -
+    dateFrom.getMonth() +
+    12 * (dateTo.getFullYear() - dateFrom.getFullYear())
+  )
+}
+
 const Main = () => {
   return (
     <div className="main container">
-      <h1 className="page-title">Experience</h1>
+      <h1 className="page-title">
+        <Emoji symbol=" 💻 " label="computer" /> Experience
+      </h1>
 
       <div className="experience-wrapper">
-        <h5>Sep 2019 - Present</h5>
+        <h5>
+          Sep 2019 - Present
+          <span>
+            <MonthDiff dateFrom={new Date(2019, 9)} dateTo={new Date()} /> Mo.
+          </span>
+        </h5>
         <h1>ESPER Satellite Imagery</h1>
         <p>
           ESPER Satellite Imagery is a startup company of which me and my
@@ -32,16 +52,25 @@ const Main = () => {
       </div>
 
       <div className="experience-wrapper">
-        <h5>July 2019 - Feb 2020</h5>
+        <h5>
+          July 2019 - Feb 2020
+          <span>
+            <MonthDiff
+              dateFrom={new Date(2019, 7)}
+              dateTo={new Date(2020, 2)}
+            />{" "}
+            Mo.
+          </span>
+        </h5>
         <h1>One Stop Solutions</h1>
         <p>
-            This was an Industry Experience project I did, as part of Monash University's final year graduate program.
-            I was placed in a group of 6 and was given a real client with their real business, for us to make them a web system.
+          This was an Industry Experience project I did, as part of Monash
+          University's final year graduate program. I was placed in a group of 6
+          and was given a real client with their real business, for us to make
+          them a web system.
         </p>
 
-        <p>
-            I was the team leader and lead front-end engineer of the project.
-        </p>
+        <p>I was the team leader and lead front-end engineer of the project.</p>
       </div>
     </div>
   )
