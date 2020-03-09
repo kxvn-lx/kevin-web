@@ -5,12 +5,12 @@ title: "My yellow subtitle on photos."
 author: "Kevin Laminto"
 author_email: "kevin.laminto@gmail.com"
 tags: ["photography"]
-featured: "1"
+featured: "0"
 ---
 
-![Image 1](./07-03-2020-image1.jpg)
+![Image 1](./image1.jpg)
 
-![Image 2](./07-03-2020-image2.jpg)
+![Image 2](./image2.jpg)
 
 You can see that I sometimes added a yellow subtitle into my photos. But what's the actual styles behind it? This post will talk just about that.
 
