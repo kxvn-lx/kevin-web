@@ -6,7 +6,7 @@ import "../blog/blog.scss"
 import "../../styles/index.scss"
 
 // Components
-import FeaturedBlog from "../featuredBlog/featuredBlog"
+import LatestBlog from "../LatestBlog/LatestBlog"
 import Emoji from "../emoji"
 
 const BlogHome = ({ data }) => {
@@ -17,7 +17,7 @@ const BlogHome = ({ data }) => {
           <Emoji symbol="  📔 " label="notes" /> Blog
         </h1>
 
-        <FeaturedBlog />
+        <LatestBlog />
 
         {data.allMarkdownRemark.edges.map(blog => (
           // The contents
@@ -25,7 +25,7 @@ const BlogHome = ({ data }) => {
             <h5 className="blog-date">{blog.node.frontmatter.date}</h5>
             <h1>
               <Link to={blog.node.frontmatter.path}>
-                {blog.node.frontmatter.title}
+              {blog.node.frontmatter.title}
               </Link>
             </h1>
             <div className="tags-wrapper">
@@ -48,7 +48,7 @@ export default props => (
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          filter: { frontmatter: { featured: { eq: "0" } } }
+          skip: 1
         ) {
           edges {
             node {
@@ -58,7 +58,6 @@ export default props => (
                 title
                 date
                 tags
-                featured
               }
             }
           }

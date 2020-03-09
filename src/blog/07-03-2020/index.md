@@ -5,7 +5,6 @@ title: "My yellow subtitle on photos."
 author: "Kevin Laminto"
 author_email: "kevin.laminto@gmail.com"
 tags: ["photography"]
-featured: "0"
 ---
 
 ![Image 1](./image1.jpg)

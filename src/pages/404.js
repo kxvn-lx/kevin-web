@@ -19,9 +19,11 @@ const NotFoundPage = () => (
       />
       <Header />
       <MainAlt
+        emoji="😢"
+        emoLabel="sad"
         title="404"
         subtitle=""
-        body="The page you are looking for seems to be gone! Perhaps go back and try again?"
+        body="The page you're looking for seems to be gone! Perhaps go back and try again?"
       />
       <Footer />
       <BigEmail />
