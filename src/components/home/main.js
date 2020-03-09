@@ -17,15 +17,15 @@ const Main = () => {
             </p>
             <p>
                 I love to combine my knowledge in developing and design to create a system that not only look and functions flawlessly,
-                but also keeping a strong focus on accessibility, user experience, usability, ethics, diversity and inclusion.
+                but also keeping a strong focus on accessibility, user experience, usability, ethics, diversity, and inclusion.
             </p>
             <p>
                 My favourite project I have done so far is One Stop Solutions (Part of Monash University's Industry Experience project). A business where users can find almost all solutions to their problems 
-                on a single website. I was the team leader and lead front-end engineer. Hence I am responsible in the productivity and project management
+                on a single website. I was the team leader and lead front-end developer. Hence I am responsible for the productivity and project management
                 of the whole team (of 6) and making sure the system follows a good UX design.
             </p>
             <p>
-                Currently I am working casual as the lead front-end developer and designer of Esper Industries startup. I am <i>looking</i> for a new 
+                Currently, I am working casual as the lead front-end developer and designer of Esper Industries startup. I am <i>looking</i> for a new 
                 part-time, full-time job. Available for freelance and speaking opportunities at <a href="mailto:kevin.laminto@gmail.com">kevin.laminto@gmail.com</a>
             </p>
             <p>
