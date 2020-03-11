@@ -14,7 +14,7 @@ const BlogHome = ({ data }) => {
     <>
       <div className="main container">
         <h1 className="page-title">
-          <Emoji symbol="  📔 " label="notes" /> Blog
+          <Emoji symbol="📔" label="notes" /> Blog
         </h1>
 
         <LatestBlog />
