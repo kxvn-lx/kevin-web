@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import "../blog/blog.scss"
 import "../../styles/index.scss"
-import "../LatestBlog/LatestBlog.scss"
+import "../latestBlog/latestBlog.scss"
 
 const LatestBlog = ({ data }) => {
   return (
