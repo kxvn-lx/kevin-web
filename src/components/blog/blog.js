@@ -6,7 +6,7 @@ import "../blog/blog.scss"
 import "../../styles/index.scss"
 
 // Components
-import LatestBlog from "../LatestBlog/LatestBlog"
+import LatestBlog from "../latestBlog/latestBlog"
 import Emoji from "../emoji"
 
 const BlogHome = ({ data }) => {
