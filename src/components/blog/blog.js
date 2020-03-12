@@ -17,7 +17,7 @@ const BlogHome = ({ data }) => {
           <Emoji symbol="📔" label="notes" /> Blog
         </h1>
 
-        <LatestBlog />
+        {/* <LatestBlog /> */}
 
         {data.allMarkdownRemark.edges.map(blog => (
           // The contents
