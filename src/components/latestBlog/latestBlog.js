@@ -12,7 +12,7 @@ const LatestBlog = ({ data }) => {
       {data.allMarkdownRemark.edges.map(blog => (
         // The contents
         <div key={blog.node.id} className="blog-wrapper latest-blog-wrapper">
-          <h5 className="blog-date">Latest | {blog.node.frontmatter.date}</h5>
+          <h5 className="blog-date">My Latest Blog | {blog.node.frontmatter.date}</h5>
           <h1>
             <Link to={blog.node.frontmatter.path}>
               {blog.node.frontmatter.title}
