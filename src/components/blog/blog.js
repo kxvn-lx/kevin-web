@@ -6,7 +6,6 @@ import "../blog/blog.scss"
 import "../../styles/index.scss"
 
 // Components
-import LatestBlog from "../latestBlog/latestBlog"
 import Emoji from "../emoji"
 
 const BlogHome = ({ data }) => {
@@ -16,8 +15,6 @@ const BlogHome = ({ data }) => {
         <h1 className="page-title">
           <Emoji symbol="📔" label="notes" /> Blog
         </h1>
-
-        <LatestBlog />
 
         {data.allMarkdownRemark.edges.map(blog => (
           // The contents
@@ -46,10 +43,7 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          skip: 1
-        ) {
+        allMarkdownRemark(sort: {fields: frontmatter___id, order: DESC}){
           edges {
             node {
               id
@@ -58,6 +52,7 @@ export default props => (
                 title
                 date
                 tags
+                id
               }
             }
           }

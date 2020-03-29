@@ -22,9 +22,9 @@ const Header = props => (
               <li>
                 <Link to="/blog">Blog</Link>
               </li>
-              <li>
+              {/* <li>
                 <DarkModeToggle />
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

@@ -4,7 +4,7 @@
 $font: 'Sen', sans-serif;
 
 // Colours
-$backgroundColour: #f4f4f4;
+$backgroundColour: #CBE3E0;
 $primaryTextColour: #111111;
 $primaryTextColourHover: orange;
 
@@ -15,7 +15,7 @@ $primaryTextColourHover: orange;
 
 // styles for selection area.
 ::selection {
-  background-color: #aafef7;
+  background-color: #79D9CC;
   color: black;
 }
 
@@ -69,10 +69,6 @@ body.light {
     svg {
       fill: $primaryTextColourHover !important;
     }
-  }
-
-  .latest-blog-wrapper {
-    background-color: #D5ECDD;
   }
 
 }

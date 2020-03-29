@@ -5,6 +5,7 @@ title: "Keychron K2 - Brown switch review."
 author: "Kevin Laminto"
 author_email: "kevin.laminto@gmail.com"
 tags: ["utility"]
+id: "2"
 ---
 
 ![Image 1](./image1.jpg)
