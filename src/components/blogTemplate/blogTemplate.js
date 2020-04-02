@@ -10,6 +10,7 @@ import BigEmail from "../bigEmail"
 import Footer from "../footer"
 
 import "../blog/blog.scss"
+import "../blogTemplate/blogTemplate.scss"
 
 export default function blogTemplate({ data }) {
   const blog = data.markdownRemark
@@ -40,7 +41,7 @@ export default function blogTemplate({ data }) {
           </div>
         </div>
         
-        <div className="content-wrapper">
+        <div className="content-wrapper blog-template-wrapper">
             <div dangerouslySetInnerHTML={{ __html: blog.html }} />
           </div>
       </div>
