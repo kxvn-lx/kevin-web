@@ -1,28 +1,153 @@
-
-/* ================================================ */
-/* =================== BIG NAME =================== */
-/* ================================================ */
 .big-name {
+  font-size: 15em;
+  font-weight: 800;
+  line-height: unset !important;
+  pointer-events: none;
+  background: #3a1c71; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffaf7b,
+    #d76d77,
+    #3a1c71
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffaf7b,
+    #d76d77,
+    #3a1c71
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+  .big-name {
+    font-size: 12em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .big-name {
+    font-size: 10em;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .big-name {
+    font-size: 8em;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .big-name {
+    font-size: 5.5em;
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  .big-name {
     font-size: 4.5em;
-    font-weight: 800;
-    line-height: unset !important;
-    pointer-events: none;
   }
-  
-  @media only screen and (max-width: 666px) {
-    .big-name {
-      font-size: 4.5em;
+}
+
+.big-name-wrapper {
+  min-height: 90vh;
+  text-align: center;
+  p {
+    // margin-top: 50px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+#masthead-arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  animation: scroll-down-animation 1.25s alternate infinite;
+
+  img {
+    width: 2.5em;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes scroll-down-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes scroll-down-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+
+#masthead-phrase-p {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  top: unset;
+}
+
+@media only screen and (max-width: 666px) {
+  #masthead-phrase-p {
+    margin-top: 6em;
+  }
+}
+
+
+#masthead-phrase {
+  letter-spacing: 0.050em;
+  animation: pulse 2s alternate infinite;
+}
+
+#masthead-phrase::after {
+  content:"";
+  animation: change-phrase 2s alternate infinite;
+}
+
+@keyframes pulse {
+	0% {
+    opacity: 0;
     }
-  }
-  
-  @media only screen and (max-width: 444px) {
-    .big-name {
-      font-size: 3.8em;
+    30% {
+      opacity: 1;
     }
-  }
-  
-  @media only screen and (max-width: 333px) {
-    .big-name {
-      font-size: 3em;
+    50% {
+      opacity: 0;
     }
-  }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      copacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes change-phrase {
+  0% { content:"Designer"; }
+  100% { content:"Developer"; }
+}

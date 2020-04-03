@@ -4,8 +4,9 @@ import BigName from "../bigName/bigName.js"
 
 const Main = () => {
     return (
-        <div className="main container">
-            <BigName name="Kevin Laminto"/>
+        <>
+        <BigName name="Kevin Laminto"/>
+        <div className="main container" id="main-wrapper">
             <h1>
                 I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default.
             </h1>
@@ -32,6 +33,7 @@ const Main = () => {
                 <Emoji symbol="📌" label="red pin"/>  Located in Melbourne, Australia.
             </p>
         </div>
+        </>
     )
 }
 

@@ -15,8 +15,8 @@ $primaryTextColourHover: orange;
 
 // styles for selection area.
 ::selection {
-  background-color: #79d9cc;
-  color: black;
+  background-color: #FFAF7B;
+  color: white;
 }
 
 .hidden {
@@ -213,7 +213,9 @@ header {
                 display: block;
                 width: 100%;
                 height: 3px;
-                background-image: linear-gradient(45deg, #da5235 50%, orange 50%);
+                background: #3A1C71;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 background-position: 100% 0;
@@ -233,6 +235,12 @@ header {
 /* ================================================ */
 /* ===================== MAIN ===================== */
 /* ================================================ */
+@media only screen and (max-width: 666px) {
+  #main-wrapper {
+    margin-top: 100px;
+  }
+}
+
 .main {
   margin-top: 300px;
   margin-bottom: 4em;
@@ -347,17 +355,13 @@ footer {
 }
 
 .coloured-text {
-  /* Fallback: create a linear gradient. */
-  background-color: black;
-  background-image: linear-gradient(45deg, #da5235 50%, orange 50%);
-
-  /* Create a conic gradient. */
-  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background-image: conic-gradient(45deg, orange 50%, #da5235 50%);
+  background: #3A1C71;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /* Set thee background size and repeat properties. */
   background-size: 33%;
-  background-repeat: repeat;
+  background-repeat: n;
 
   /* Use the text as a mask for the background. */
   background-clip: text;
@@ -449,7 +453,9 @@ footer {
 /* Add a linear gradient fallback when not . */
 @supports not (background-image: conic-gradient(#da5235, orange)) {
   .coloured-text {
-    background-image: linear-gradient(45deg, #da5235 50%, orange 50%);
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation: coloured-text-fallback-animation-rev 0.75s ease-in forwards;
   }
 
