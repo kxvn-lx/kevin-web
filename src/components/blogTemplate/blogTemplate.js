@@ -41,7 +41,7 @@ export default function blogTemplate({ data }) {
           </div>
         </div>
         
-        <div className="content-wrapper blog-template-wrapper">
+        <div className="content-wrapper">
             <div dangerouslySetInnerHTML={{ __html: blog.html }} />
           </div>
       </div>

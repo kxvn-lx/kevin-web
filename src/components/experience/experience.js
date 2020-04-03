@@ -25,7 +25,8 @@ const Main = () => {
         <h5>
           Sep 2019 - Present
           <span>
-            {" "} <MonthDiff dateFrom={new Date(2019, 9)} dateTo={new Date()} /> Mo.
+            {/* DateFrom needs to be 9, but somehow got the date wrong. Need to take a look more */}
+            {" "} <MonthDiff dateFrom={new Date(2019, 8)} dateTo={new Date()} /> Mo.
           </span>
         </h5>
         <h1>ESPER Satellite Imagery</h1>

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 // Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
-$font: 'Inter', sans-serif;
+$font: "Inter", sans-serif;
 
 // Colours
 $backgroundColour: #fff;
@@ -15,7 +15,7 @@ $primaryTextColourHover: orange;
 
 // styles for selection area.
 ::selection {
-  background-color: #79D9CC;
+  background-color: #79d9cc;
   color: black;
 }
 
@@ -70,7 +70,6 @@ body.light {
       fill: $primaryTextColourHover !important;
     }
   }
-
 }
 
 h1,
@@ -214,7 +213,7 @@ header {
                 display: block;
                 width: 100%;
                 height: 3px;
-                background-image: linear-gradient(45deg, black 50%, orange 50%);
+                background-image: linear-gradient(45deg, #da5235 50%, orange 50%);
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 background-position: 100% 0;
@@ -350,11 +349,11 @@ footer {
 .coloured-text {
   /* Fallback: create a linear gradient. */
   background-color: black;
-  background-image: linear-gradient(45deg, #DA5235 50%, orange 50%);
+  background-image: linear-gradient(45deg, #da5235 50%, orange 50%);
 
   /* Create a conic gradient. */
   /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background-image: conic-gradient(45deg, orange 50%, #DA5235 50%);
+  background-image: conic-gradient(45deg, orange 50%, #da5235 50%);
 
   /* Set thee background size and repeat properties. */
   background-size: 33%;
@@ -448,9 +447,9 @@ footer {
 /* ================================================ */
 
 /* Add a linear gradient fallback when not . */
-@supports not (background-image: conic-gradient(black, orange)) {
+@supports not (background-image: conic-gradient(#da5235, orange)) {
   .coloured-text {
-    background-image: linear-gradient(45deg, black 50%, orange 50%);
+    background-image: linear-gradient(45deg, #da5235 50%, orange 50%);
     animation: coloured-text-fallback-animation-rev 0.75s ease-in forwards;
   }
 

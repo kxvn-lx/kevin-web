@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 // Components
-import DarkModeToggle from "./darkModeToggle"
+
 
 const Header = props => (
   <header style={{ backgroundColor: props.bgColor }}>
@@ -22,9 +22,6 @@ const Header = props => (
               <li>
                 <Link to="/blog">Blog</Link>
               </li>
-              {/* <li>
-                <DarkModeToggle />
-              </li> */}
             </ul>
           </nav>
         </div>

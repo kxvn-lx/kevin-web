@@ -18,14 +18,6 @@ body.dark html {
 
 body.dark {
 
-  .coloured-text {
-    /* Fallback: create a linear gradient. */
-    background-color: white;
-    background-image: linear-gradient(45deg, #DA5235 50%, orange 50%);
-  
-    background-image: conic-gradient(45deg, orange 50%, #DA5235 50%);
-  }
-
   .icon {
     border: none;
 
