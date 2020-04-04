@@ -63,45 +63,6 @@
   }
 }
 
-#masthead-arrow-wrapper {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  animation: scroll-down-animation 1.25s alternate infinite;
-
-  img {
-    width: 2.5em;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
-
-@-webkit-keyframes scroll-down-animation {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes scroll-down-animation {
-  0%,
-  100% {
-    transform: translateY(0);
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-15px);
-  }
-}
 
 #masthead-phrase-p {
   margin-top: 1.5em;
