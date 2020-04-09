@@ -3,13 +3,14 @@ import React from "react"
 
 // Components
 
-
 const Header = props => (
+
+  
   <header style={{ backgroundColor: props.bgColor }}>
     <div className="bg-container">
       <div className="inner-header">
         <div className="logo">
-          <p className={`coloured-text ${props.logoHidden}`}>
+          <p id="big-name-small" className={`coloured-text ${props.logoHidden}`}>
             <Link to="/">Kevin Laminto</Link>
           </p>
         </div>
@@ -17,10 +18,10 @@ const Header = props => (
           <nav>
             <ul>
               <li>
-                <Link to="/experience">Experience</Link>
+                <Link to="/experience" activeClassName="active">Experience</Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/blog" activeClassName="active">Blog</Link>
               </li>
             </ul>
           </nav>

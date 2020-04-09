@@ -10,8 +10,11 @@ import Main from "../components/home/main"
 import Footer from "../components/footer"
 import BigEmail from "../components/bigEmail"
 
+
+
 const IndexPage = () => (
   <>
+  
   <div>
     <SEO 
       description = "I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default."

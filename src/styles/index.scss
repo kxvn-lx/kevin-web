@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre:wght@400;500&display=swap');
 
 // Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
-$font: "Inter", sans-serif;
-
+$font:  'Cormorant Garamond', serif;
+$fontBody: 'Proza Libre', sans-serif;
 // Colours
-$backgroundColour: #fff;
+$backgroundColour: #F1EFEE;
 $primaryTextColour: black;
 $primaryTextColourHover: orange;
 
@@ -15,7 +15,7 @@ $primaryTextColourHover: orange;
 
 // styles for selection area.
 ::selection {
-  background-color: #FFAF7B;
+  background-color: #ffaf7b;
   color: white;
 }
 
@@ -30,9 +30,9 @@ html {
 html,
 body {
   overflow-x: hidden;
-  font-family: $font;
+  font-family: $fontBody;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   color: $primaryTextColour;
   transition: 0.25s;
   -webkit-transition: 0.25s;
@@ -49,7 +49,13 @@ body {
 }
 
 .big-name {
-  font-family: $font;
+  font-family: $fontBody;
+}
+
+#big-name-small {
+  a {
+    font-family: $fontBody;
+  }
 }
 
 /* ================================================ */
@@ -57,7 +63,6 @@ body {
 /* ================================================ */
 
 body.light {
-
   code {
     word-break: break-all;
     background-color: pink;
@@ -80,6 +85,12 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.5em;
+  font: $font;
+}
+
+a.active {
+  padding-bottom: 5px;
+  border-bottom: 1px solid $primaryTextColour !important;
 }
 
 @media only screen and (max-width: 666px) {
@@ -214,9 +225,19 @@ header {
                 display: block;
                 width: 100%;
                 height: 3px;
-                background: #3A1C71;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background: #3a1c71; /* fallback for old browsers */
+                background: -webkit-linear-gradient(
+                  to left,
+                  #ffaf7b,
+                  #d76d77,
+                  #3a1c71
+                ); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(
+                  to left,
+                  #ffaf7b,
+                  #d76d77,
+                  #3a1c71
+                ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 background-position: 100% 0;
@@ -236,7 +257,6 @@ header {
 /* ================================================ */
 /* ===================== MAIN ===================== */
 /* ================================================ */
-
 
 @media only screen and (max-width: 666px) {
   #main-wrapper {
@@ -358,9 +378,19 @@ footer {
 }
 
 .coloured-text {
-  background: #3A1C71;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3a1c71; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffaf7b,
+    #d76d77,
+    #3a1c71
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffaf7b,
+    #d76d77,
+    #3a1c71
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /* Set thee background size and repeat properties. */
   background-size: 33%;
@@ -456,9 +486,19 @@ footer {
 /* Add a linear gradient fallback when not . */
 @supports not (background-image: conic-gradient(#da5235, orange)) {
   .coloured-text {
-    background: #3A1C71;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #3a1c71; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #ffaf7b,
+      #d76d77,
+      #3a1c71
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #ffaf7b,
+      #d76d77,
+      #3a1c71
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation: coloured-text-fallback-animation-rev 0.75s ease-in forwards;
   }
 
