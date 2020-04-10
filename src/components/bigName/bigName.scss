@@ -63,7 +63,6 @@
   }
 }
 
-
 #masthead-phrase-p {
   margin-top: 1.5em;
   font-size: 1.5em;
@@ -76,39 +75,42 @@
   }
 }
 
-
 #masthead-phrase {
-  letter-spacing: 0.050em;
+  letter-spacing: 0.05em;
   animation: pulse 2s alternate infinite;
 }
 
 #masthead-phrase::after {
-  content:"";
+  content: "";
   animation: change-phrase 2s alternate infinite;
 }
 
 @keyframes pulse {
-	0% {
+  0% {
     opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    60% {
-      opacity: 0;
-    }
-    80% {
-      copacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    copacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes change-phrase {
-  0% { content:"Designer"; }
-  100% { content:"Developer"; }
+  0% {
+    content: "Designer";
+  }
+  100% {
+    content: "Developer";
+  }
 }

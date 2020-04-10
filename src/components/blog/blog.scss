@@ -1,19 +1,22 @@
 .blog-wrapper {
+  background-color: #eaddcf;
   margin-bottom: 1.1em;
-  padding: 1.5em 0;
+  padding: 1.5em;
+  border-radius: 0.5rem;
+
   h1 {
     margin-bottom: 1.1rem;
   }
 
   h5 {
     text-transform: uppercase;
-    opacity: 0.7;
+    opacity: 0.6;
   }
 }
 
 .tags-wrapper {
     p {
-        opacity: 0.7;
+        opacity: 0.8;
         font-size: 0.7em;
         text-transform: uppercase;
         span {
@@ -34,16 +37,4 @@
 
 .content-wrapper {
   margin-top: 2em;
-}
-
-body.light {
-  .blog-wrapper {
-    background-color: #f4f4f4;
-  }
-}
-
-body.dark {
-  .blog-wrapper {
-    background-color: black;
-  }
 }

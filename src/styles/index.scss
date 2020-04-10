@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 // Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
-$font:  'Open Sans', sans-serif;
-$fontBody: 'Open Sans', sans-serif;
+$font: "Open Sans", sans-serif;
+$fontBody: "Open Sans", sans-serif;
 // Colours
-$backgroundColour: #F1EFEE;
-$primaryTextColour: black;
-$primaryTextColourHover: orange;
+$backgroundColour: #f9f4ef;
+$primaryTextColour: #716040;
+$primaryTextColourHover: #b39c72;
 
 * {
   margin: 0;
@@ -86,6 +86,10 @@ h5,
 h6 {
   margin-bottom: 0.5em;
   font: $font;
+  color: #020826;
+  a {
+    color: #020826;
+  }
 }
 
 // a.active {
