@@ -18,7 +18,7 @@ const Main = () => {
   return (
     <div className="main container">
       <h1 className="page-title">
-        <Emoji symbol="👨‍💻" label="man awith computer" /> Experience
+        <Emoji symbol="👨‍💻" label="man with computer" /> Experience
       </h1>
 
       <div className="experience-wrapper">
@@ -30,6 +30,7 @@ const Main = () => {
           </span>
         </h5>
         <h1>ESPER Satellite Imagery</h1>
+        <h5 style={{marginBottom: "2em"}}>Lead front-end developer & designer</h5>
         <p>
           ESPER Satellite Imagery is a startup company of which me and my
           friends build and develop a surveying solutions for agriculture and
@@ -65,15 +66,12 @@ const Main = () => {
           </span>
         </h5>
         <h1>One Stop Solutions</h1>
+        <h5 style={{marginBottom: "2em"}}>Front-end developer & designer, Team leader</h5>
         <p>
           This was an Industry Experience project I did as part of Monash
           University's final year graduate program. I was placed in a group of 6
           and was given a real client with their real business, for us to make
           them a web system.
-        </p>
-
-        <p>
-          I was the team leader and lead front-end developer of the project.
         </p>
       </div>
     </div>

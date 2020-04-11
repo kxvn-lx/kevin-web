@@ -18,12 +18,11 @@ const BlogHome = ({ data }) => {
 
         {data.allMarkdownRemark.edges.map(blog => (
           // The contents
-          <div key={blog.node.id} className="blog-wrapper">
+          <Link to={blog.node.frontmatter.path}>
+            <div key={blog.node.id} className="blog-wrapper">
             <h5 className="blog-date">{blog.node.frontmatter.date}</h5>
             <h1>
-              <Link to={blog.node.frontmatter.path}>
               {blog.node.frontmatter.title}
-              </Link>
             </h1>
             <div className="tags-wrapper">
               <p>
@@ -33,6 +32,8 @@ const BlogHome = ({ data }) => {
               </p>
             </div>
           </div>
+          </Link>
+          
         ))}
       </div>
     </>

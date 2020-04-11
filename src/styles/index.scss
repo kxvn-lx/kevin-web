@@ -4,19 +4,13 @@
 $font: "Open Sans", sans-serif;
 $fontBody: "Open Sans", sans-serif;
 // Colours
-$backgroundColour: #f9f4ef;
+$backgroundColour: #f5f2f2;
 $primaryTextColour: #716040;
-$primaryTextColourHover: #a08b64;
+$primaryTextColourHover: #7e4273;
 
 * {
   margin: 0;
   padding: 0;
-}
-
-// styles for selection area.
-::selection {
-  background-color: #ffaf7b;
-  color: white;
 }
 
 .hidden {
@@ -86,9 +80,9 @@ h5,
 h6 {
   margin-bottom: 0.5em;
   font: $font;
-  color: #020826;
+  color: #444444;
   a {
-    color: #020826;
+    color: #444444;
   }
 }
 
@@ -209,6 +203,7 @@ header {
             margin-left: 2em;
             list-style: none;
             a {
+              padding-bottom: 5px;
               border: none;
               text-decoration: none;
               letter-spacing: 1.75px;

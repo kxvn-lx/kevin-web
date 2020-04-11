@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 // Import Components
 import Header from "../components/header"
-import Main from "../components/home/main"
+import Main from "../components/main/main"
 import Footer from "../components/footer"
 import BigEmail from "../components/bigEmail"
 
