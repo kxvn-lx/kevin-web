@@ -29,7 +29,7 @@ export default function blogTemplate({ data }) {
         <Link to="/blog" className="icon">
           <IosArrowRoundBack fontSize="3em" />
         </Link>
-        <div className="blog-wrapper">
+        <div style={{pointerEvents: "none"}} className="blog-wrapper">
           <h5>{blog.frontmatter.date}</h5>
           <h1>{blog.frontmatter.title}</h1>
           <div className="tags-wrapper">
