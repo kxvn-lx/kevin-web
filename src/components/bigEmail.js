@@ -3,7 +3,7 @@ import React from "react"
 const BigEmail = () => {
     return (
         <div id="bigEmail-container">
-            <p className="coloured-text">
+            <p>
                 <a href="mailto:kevin.laminto@gmail.com">
                     kevin.laminto@gmail.com
                 </a>

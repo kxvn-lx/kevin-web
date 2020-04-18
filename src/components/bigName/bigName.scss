@@ -1,23 +1,23 @@
 .big-name {
   font-size: 15em;
-  font-weight: 800;
+  font-weight: 700;
   line-height: unset !important;
   pointer-events: none;
-  background: #3a1c71; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #ffaf7b,
-    #d76d77,
-    #3a1c71
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #ffaf7b,
-    #d76d77,
-    #3a1c71
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // background: #3a1c71; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to bottom,
+  //   #ffaf7b,
+  //   #d76d77,
+  //   #3a1c71
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   to bottom,
+  //   #ffaf7b,
+  //   #d76d77,
+  //   #3a1c71
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 1000px) {
