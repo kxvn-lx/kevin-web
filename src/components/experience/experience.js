@@ -74,6 +74,24 @@ const Main = () => {
           them a web system.
         </p>
       </div>
+
+      <div className="experience-wrapper">
+        <h5>
+          June 2019 - Present
+          <span>
+            <MonthDiff dateFrom={new Date(2019, 5)} dateTo={new Date()} /> Mo.
+          </span>
+        </h5>
+        <h1>Freelance/Independent iOS Developer</h1>
+        <h5 style={{marginBottom: "2em"}}>Current app: <a href="https://cutt.ly/nooknook">NookNook</a></h5>
+        <p>
+          NookNook is currently on its beta phase. Although it's still very new, I have genuinely received positive
+          reviews from the community. What makes NookNook differences from other apps is its <i>user-centred design.</i>
+          I am doing my best to keep the app lively and up-to-date to the current trend so that players could keep playing
+          whilst having the right tools on their hand.
+        </p>
+      </div>
+
     </div>
   )
 }
