@@ -93,10 +93,10 @@ h6 {
   }
 }
 
-// a.active {
-//   padding-bottom: 5px;
-//   border-bottom: 1px solid $primaryTextColour !important;
-// }
+a.active {
+  background-color: #f4f4f4;
+  border-radius: 2.5px;
+}
 
 // @media only screen and (max-width: 666px) {
 //   html,
