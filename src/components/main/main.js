@@ -11,7 +11,7 @@ const Main = () => {
                 I'm a multidisciplinary developer and designer, who values aesthetic design and visuals, with amazing performance by default.
             </h1>
             <p>
-                Hey there! I'm a full-stack developer (specialised in front-end), UI/UX designer and iOS Developer
+                Hey there! I'm an indie iOS Developer, UI/UX designer and full-stack developer (specialised in front-end).
                 who's currently on a final year bachelor's degree in Software Development at Monash University.
                 My knowledge in the realm of IT including, but not limited to, web application database, agile methodology, 
                 project management, client interaction, and mobile apps development. I'm also passionate about photography and videography.
