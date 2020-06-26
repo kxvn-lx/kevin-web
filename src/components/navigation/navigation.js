@@ -14,14 +14,14 @@ export default class navigation extends Component {
                         </h1>
                         <p>iOS Developer, interested in UI/UX Design.</p>
                     </div>
-                    {/* <ul>
+                    <ul>
                         <li>
                             <Link to="/about" activeClassName="active">About</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <p>Blog</p>
-                        </li>
-                    </ul> */}
+                        </li> */}
+                    </ul>
                 </nav></header>
 
         )

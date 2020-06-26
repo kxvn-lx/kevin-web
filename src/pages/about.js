@@ -2,6 +2,7 @@ import React from "react"
 
 import SEO from "../components/seo"
 import Navigation from "../components/navigation/navigation.js"
+import Footer from "../components/footer/footer"
 
 import "../styles/shared.scss"
 
@@ -15,11 +16,9 @@ const AboutPage = () => (
         <div className="main">
             <Navigation />
             <div className="content-wrapper">
-                <h1>About</h1>
-                <p>
-                    Coming soon.
-                </p>
+                <h1>COMING SOON</h1>
             </div>
+            <Footer />
         </div>
     </div>
 )
