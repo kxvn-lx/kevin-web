@@ -1,0 +1,71 @@
+// Light
+$systemBackground: #ffffff;
+$systemGray6: #F2F2F7;
+$label: #000000;
+$secondaryLabel: #8e8e93;
+
+// Dark
+$systemBackgroundD: #000000;
+$systemGray6D: #1C1C1E;
+$labelD: #ffffff;
+$secondaryLabelD: #8e8e93;
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Assistant', sans-serif;
+}
+
+.main {
+    background-color: $systemBackground;
+    min-height: 100vh;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.active {
+    font-weight: 600;
+}
+

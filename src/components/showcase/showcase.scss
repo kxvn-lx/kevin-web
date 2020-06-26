@@ -1,0 +1,36 @@
+$iconSize: 125px;
+
+.app-icon-wrapper {
+    img {
+        width: $iconSize;
+        height: $iconSize;
+        object-fit: cover;
+        border-radius: 25px;
+        border: 1px solid #E5E5EA;
+    }
+
+    .title {
+        font-weight: 700;
+    }
+
+    .description {
+        font-weight: 400;
+        font-size: 0.85em;
+        color: #8E8E93;
+        width: 20em;
+    }
+
+    .downloadNowImg {
+        object-fit: contain;
+        width: unset;
+        height: unset;
+        border-radius: unset;
+        border: unset;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .app-icon-wrapper {
+        margin: 2em 0;
+    }
+}

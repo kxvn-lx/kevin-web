@@ -1,0 +1,49 @@
+nav {
+    margin: 2em;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-details {
+        h1 {
+            font-weight: 800;
+            a {
+                text-decoration: none;
+            }
+        }
+
+        p {
+            color: #8E8E93;
+        }
+    }
+
+    ul {
+        float: right;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0px 36px;
+        font-size: 0.9em;
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    nav {
+        display: inline;
+        text-align: center;
+
+        ul {
+            margin-top: 1em;
+            float: unset;
+        }
+    }
+}

@@ -1,393 +1,53 @@
-// Colour animations are inspired from https://github.com/sarahfossheim/fossheim-io/
-$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-  "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-$fontBody: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-  "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+// Light
+$systemBackground: #ffffff;
+$systemGray6: #f2f2f7;
+$label: #000000;
+$secondaryLabel: #8e8e93;
 
-// Colours
-$backgroundColour: #fff;
-$primaryTextColour: #37352f;
-$primaryTextColourHover: #494949;
+// Dark
+$systemBackgroundD: #000000;
+$systemGray6D: #1c1c1e;
+$labelD: #ffffff;
+$secondaryLabelD: #8e8e93;
 
-*::selection {
-  background: rgba(45, 170, 219, 0.3);
+.flexbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1020px) {
+    .flexbox {
+        flex-direction: column;
+    }
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    color: $label;
 }
 
-.hidden {
-  display: none;
+.flexbox .col {
+    margin: 0 2em;
 }
 
-html {
-  background-color: transparent;
-}
-
-html,
-body {
-  overflow-x: hidden;
-  letter-spacing: 0.01em;
-  font-family: $fontBody;
-  font-size: 16px;
-  font-weight: 400;
-  color: $primaryTextColour;
-  transition: 0.25s;
-  -webkit-transition: 0.25s;
-
-  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 0.5s; /* Firefox < 16 */
-  -ms-animation: fadein 0.5s; /* Internet Explorer */
-  -o-animation: fadein 0.5s; /* Opera < 12.1 */
-  animation: fadein 0.5s;
-}
-
-body {
-  background-color: $backgroundColour;
-}
-
-.big-name {
-  font-family: $fontBody;
-}
-
-#big-name-small {
-  a {
-    font-family: $fontBody;
-  }
-}
-
-/* ================================================ */
-/* =================== SHARED ===================== */
-/* ================================================ */
-
-body.light {
-  code {
-    word-break: break-all;
-    background-color: pink;
-    padding: 1.5px;
-    border: 1px solid pink;
-    border-radius: 5px;
-  }
-
-  .icon:hover {
-    svg {
-      fill: $primaryTextColourHover !important;
-    }
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0.5em;
-  font: $font;
-  letter-spacing: 0.02em;
-  color: black;
-  a {
-    color: primaryTextColour;
-  }
-}
-
-a.active {
-  background-color: #f4f4f4;
-  border-radius: 2.5px;
-}
-
-// @media only screen and (max-width: 666px) {
-//   html,
-//   body {
-//     font-size: 15px;
-//   }
-// }
-
-.bg-container {
-  width: 70vw;
-  min-width: 70vw;
-  margin: 0 auto;
-}
-
-.container {
-  width: 70vw;
-  max-width: 700px;
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a {
-  text-decoration: none;
-  transition: 0.25s;
-  color: $primaryTextColour;
-  border-bottom: 1px solid $primaryTextColour;
-}
-
-@media not all and (pointer: coarse) {
-  a:hover {
-    color: $primaryTextColourHover;
-    border-color: $primaryTextColourHover;
-  }
-}
-
-ul,
-ol {
-  margin-bottom: 2em;
-  position: relative;
-  left: 2em;
-}
-/* ================================================ */
-/* ================== KEYFRAMES =================== */
-/* ================================================ */
-@keyframes link-animation {
-  0% {
-    background-size: 700%;
-    background-position: 150% 0;
-  }
-  100% {
-    background-size: 100%;
-    background-position: 0 0;
-  }
-}
-
-/* ================================================ */
-/* =================== HEADER ===================== */
-/* ================================================ */
-
-// Fallback for smaller device - change the layout positions.
-@media screen and (max-width: 900px) {
-  header {
-    position: relative;
-    top: 30px;
-    .navigation {
-      nav {
-        ul {
-          li {
-            display: block !important;
-            text-align: right;
-            margin-left: 0;
-            margin-top: 1.1em;
-          }
-        }
-      }
-    }
-  }
-}
-
-header {
-  background-color: $backgroundColour;
-  height: 80px;
-  width: 100%;
-  padding-top: 30px;
-  z-index: 10;
-
-  .inner-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-
-    .logo {
-      a {
-        border: none;
-        font-family: $font;
-        font-weight: 600;
-        font-size: 1.3rem;
-        text-decoration: none;
-        letter-spacing: 1.5px;
-        color: $primaryTextColour;
-      }
+@media (prefers-color-scheme: dark) {
+    * {
+        color: $labelD;
     }
 
-    .navigation {
-      nav {
-        ul {
-          li {
-            display: inline-block;
-            margin-left: 2em;
-            list-style: none;
-            a {
-              padding: 5px 10px;
-              padding-bottom: 5px;
-              border: none;
-              text-decoration: none;
-              letter-spacing: 1.75px;
-              color: $primaryTextColour;
-              font-size: 15px;
-              &:last-child {
-                margin-right: 0;
-              }
-            }
-
-            @media not all and (pointer: coarse) {
-              a:hover {
-                background-color: #f4f4f4;
-                border-radius: 2.5px;
-              }
-            }
-          }
-        }
-      }
+    .main {
+        background-color: $systemBackgroundD;
     }
-  }
 }
 
-/* ================================================ */
-/* ===================== MAIN ===================== */
-/* ================================================ */
+.content-wrapper {
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 5em;
 
-@media only screen and (max-width: 666px) {
-  #main-wrapper {
-    margin-top: 100px;
-  }
-}
-
-.main {
-  margin-top: 300px;
-  margin-bottom: 4em;
-
-  h1,
-  p,
-  ol {
-    margin-bottom: 2rem;
-  }
-
-  h1 {
-    font-family: $font;
-  }
-
-  @media only screen and (max-width: 666px) {
     h1 {
-      font-size: 1.35rem;
+        margin-bottom: 1em;
     }
-  }
-
-  p {
-    line-height: 1.8rem;
-
-    a {
-      text-decoration: none;
-      transition: 0.25s;
-      color: $primaryTextColour;
-      border-bottom: 1px solid $primaryTextColour;
-    }
-
-    @media not all and (pointer: coarse) {
-      a:hover {
-        color: $primaryTextColourHover;
-        border-color: $primaryTextColourHover;
-      }
-    }
-  }
-}
-
-/* ================================================ */
-/* ==================== FOOTER ==================== */
-/* ================================================ */
-footer {
-  display: block;
-  font-size: 0.8rem;
-  overflow: hidden;
-  padding-bottom: 3rem;
-  .bg-container {
-    border-top: $primaryTextColour 1px solid;
-    padding-top: 4rem;
-    div:first-child {
-      width: 25%;
-    }
-
-    div:nth-child(2) {
-      width: 25%;
-      text-align: right;
-      float: right;
-    }
-    div:last-child {
-      margin: 0 auto;
-      float: none;
-      width: 25%;
-      padding-top: 0.8rem;
-      text-align: center;
-    }
-
-    div {
-      float: left;
-
-      p {
-        a {
-          text-decoration: none;
-          transition: 0.25s;
-          color: $primaryTextColour;
-          border-bottom: 1px solid $primaryTextColour;
-        }
-
-        @media not all and (pointer: coarse) {
-          a:hover {
-            color: $primaryTextColourHover;
-            border-color: $primaryTextColourHover;
-          }
-        }
-
-        span {
-          font-size: 0.9em;
-        }
-      }
-    }
-
-    @media only screen and (max-width: 666px) {
-      div:first-child {
-        width: 80%;
-      }
-
-      div:nth-child(2) {
-        margin-top: 20px;
-        width: 80%;
-        text-align: left;
-        float: left;
-      }
-
-      div:last-child {
-        float: left;
-        text-align: left;
-        width: 80%;
-        margin-top: 20px;
-      }
-    }
-  }
-}
-
-
-/* ================================================ */
-/* ================== BIG EMAIL =================== */
-/* ================================================ */
-#bigEmail-container {
-  font-weight: 600;
-  transform: rotate(-90deg);
-  position: fixed;
-  bottom: 200px;
-  left: -90px;
-
-  p {
-    font-family: $font;
-    font-size: 1.2rem;
-
-    a {
-      border: none;
-      text-decoration: none;
-      transition: 0.25s;
-      color: black;
-    }
-
-    a:hover {
-      color: $primaryTextColourHover;
-    }
-  }
-}
-
-@media only screen and (max-width: 666px) {
-  #bigEmail-container {
-    display: none;
-  }
 }
