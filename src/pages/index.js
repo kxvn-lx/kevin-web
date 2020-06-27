@@ -29,7 +29,7 @@ const IndexPage = () => (
             <Navigation />
 
             <div className="content-wrapper">
-                <h1>PROJECTS</h1>
+                <h2>PROJECTS</h2>
 
                 <div className="flexbox">
                     <div className="col" style={{ marginLeft: "0" }}>

@@ -43,11 +43,20 @@ $secondaryLabelD: #8e8e93;
 }
 
 .content-wrapper {
+    max-width: 1000px;
     width: 70vw;
     margin: 0 auto;
     margin-top: 5em;
 
-    h1 {
+    h2 {
+        margin-bottom: 1em;
+    }
+}
+
+.blog-content-wrapper {
+    max-width: 666px;
+
+    p {
         margin-bottom: 1em;
     }
 }

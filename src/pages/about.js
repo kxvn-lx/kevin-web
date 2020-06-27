@@ -15,8 +15,28 @@ const AboutPage = () => (
         />
         <div className="main">
             <Navigation />
-            <div className="content-wrapper">
-                <h1>COMING SOON</h1>
+            <div className="content-wrapper blog-content-wrapper">
+                <h2>Hey! 👋</h2>
+                <p>
+                    Let's keep this short. If you haven't notice, I love building iOS apps in my free time.
+                    It's really fun and challenging. And with the new SwiftUI framework introduced in WWDC19,
+                    iOS development just got more and more excited as ever!<br />
+                </p>
+
+                <p>
+                    Apart from building apps, I enjoyed researching in UI/UX to ensure users have the best
+                    experience in using the app.
+                </p>
+
+                <p>
+                    I also enjoyed doing photography and making musics in my free time. You can check my photography website <a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">here</a>.
+                </p>
+
+                <p>
+                    And that's it! Hope to get to know you too! get in touch via my email here  <a href="mailto:kevin.laminto@gmail.com">kevin.laminto@gmail.com</a>
+                </p>
+
+
             </div>
             <Footer />
         </div>
