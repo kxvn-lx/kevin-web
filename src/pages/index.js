@@ -15,7 +15,11 @@ import Showcase from "../components/showcase/showcase"
 import Footer from "../components/footer/footer"
 
 const ShowcaseContainer = styled.div`
-    margin-top: 1em
+    margin-top: 1em;
+
+    a {
+        font-size: 0.8em;
+    }
 `
 
 const IndexPage = () => (

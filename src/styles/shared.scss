@@ -1,28 +1,28 @@
 // Light
 $systemBackground: #ffffff;
-$systemGray6: #F2F2F7;
+$systemGray6: #f2f2f7;
 $label: #000000;
 $secondaryLabel: #8e8e93;
 
 // Dark
 $systemBackgroundD: #000000;
-$systemGray6D: #1C1C1E;
+$systemGray6D: #1c1c1e;
 $labelD: #ffffff;
 $secondaryLabelD: #8e8e93;
 
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap');
+/* Define the "system" font family */
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"),
+        local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
 
 html {
     box-sizing: border-box;
     font-size: 18px;
     height: 100%;
-}
-
-
-@media only screen and (max-width: 1020px) {
-    html {
-        font-size: 16px;
-    }
 }
 
 *,
@@ -57,7 +57,7 @@ img {
 }
 
 body {
-    font-family: 'Assistant', sans-serif;
+    font-family: "system";
 }
 
 .main {
@@ -68,20 +68,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-
 }
 
 .active {
     font-weight: 600;
-    background-color: #F2F2F7;
+    background-color: #f2f2f7;
     padding: 5px 15px;
     border-radius: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
     .active {
-        background-color: #1C1C1E;
+        background-color: #1c1c1e;
     }
 }
 
+p {
+    line-height: 1.5;
+}
