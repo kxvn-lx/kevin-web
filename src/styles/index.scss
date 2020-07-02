@@ -22,6 +22,10 @@ $secondaryLabelD: #8e8e93;
     .flexbox {
         flex-direction: column;
     }
+
+    .flexbox .col {
+        margin: 0 !important;
+    }
 }
 
 * {

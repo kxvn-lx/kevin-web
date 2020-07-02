@@ -29,13 +29,12 @@ const AboutPage = () => (
                 </p>
 
                 <p>
-                    I also enjoyed doing photography and making musics in my free time. You can check my photography website <a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">here</a>.
+                    I also enjoyed doing photography and making musics in my free time. You can check my photography website here <a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">www.kevinlaminto.com</a>.
                 </p>
 
                 <p>
                     And that's it! Hope to get to know you too! get in touch via my email here  <a href="mailto:kevin.laminto@gmail.com">kevin.laminto@gmail.com</a>
                 </p>
-
 
             </div>
             <Footer />

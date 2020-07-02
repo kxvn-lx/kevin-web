@@ -8,7 +8,6 @@ import "../styles/index.scss"
 import nooknook from "../images/nooknook-icon.png"
 import kontaxcam from "../images/kontaxcam-icon.png"
 import Navigation from "../components/navigation/navigation.js"
-import download from "../images/downloadAppStore.svg"
 
 // Component
 import Showcase from "../components/showcase/showcase"
@@ -18,7 +17,8 @@ const ShowcaseContainer = styled.div`
     margin-top: 1em;
 
     a {
-        font-size: 0.8em;
+        font-size: 0.85em;
+        text-decoration: none;
     }
 `
 
@@ -43,8 +43,8 @@ const IndexPage = () => (
                             appDescription={"NookNook is a companion app for Animal Crossing: New Horizons. It is simple, yet powerful enough to show every informations a player need for the game."}
                         >
                             <ShowcaseContainer>
-                                <a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">
-                                    <img className="downloadNowImg" src={download} alt="download now" />
+                                <a className="showcase-link apple-link" href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">
+                                    Download from the  App Store
                                 </a>
                             </ShowcaseContainer>
                         </Showcase>
@@ -57,7 +57,7 @@ const IndexPage = () => (
                             appDescription={"Kontax Cam is an open-sourced project I did for iOS device. It's an instant camera app with personalised custom filters and effect."}
                         >
                             <ShowcaseContainer>
-                                <a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">
+                                <a className="showcase-link github-link" href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">
                                     View on github
                                 </a>
                             </ShowcaseContainer>
