@@ -29,7 +29,7 @@ const AboutPage = () => (
                 </p>
 
                 <p>
-                    I also enjoyed doing photography and making musics in my free time. You can check my photography website here <a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">www.kevinlaminto.com</a>.
+                    I also enjoyed doing photography and making musics in my free time. You can check my photography website here <a href="https://kevinlaminto.com/" target="_blank" rel="noreferrer">www.kevinlaminto.com</a>.
                 </p>
 
                 <p>
