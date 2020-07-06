@@ -51,14 +51,3 @@ $iconSize: 125px;
     -ms-transform: translate(0px, -3px);
     transform: translate(0px, -3px);
 }
-
-@media (prefers-color-scheme: dark) {
-    .showcase-link {
-        color: black;
-        background-color: #F2F2F7;
-    }
-
-    .showcase-link:hover {
-        background-color: #E5E5EA;
-    }
-}

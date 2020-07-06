@@ -4,11 +4,7 @@ $systemGray6: #f2f2f7;
 $label: #000000;
 $secondaryLabel: #8e8e93;
 
-// Dark
-$systemBackgroundD: #000000;
-$systemGray6D: #1c1c1e;
-$labelD: #ffffff;
-$secondaryLabelD: #8e8e93;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
 
 html {
     box-sizing: border-box;
@@ -48,9 +44,7 @@ img {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-    "Helvetica Neue", sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .main {
@@ -68,12 +62,6 @@ body {
     background-color: #f2f2f7;
     padding: 5px 15px;
     border-radius: 5px;
-}
-
-@media (prefers-color-scheme: dark) {
-    .active {
-        background-color: #1c1c1e;
-    }
 }
 
 p {

@@ -4,12 +4,6 @@ $systemGray6: #f2f2f7;
 $label: #000000;
 $secondaryLabel: #8e8e93;
 
-// Dark
-$systemBackgroundD: #000000;
-$systemGray6D: #1c1c1e;
-$labelD: #ffffff;
-$secondaryLabelD: #8e8e93;
-
 .flexbox {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -38,16 +32,6 @@ $secondaryLabelD: #8e8e93;
 
 .flexbox .col {
     margin: 0 2em;
-}
-
-@media (prefers-color-scheme: dark) {
-    * {
-        color: $labelD;
-    }
-
-    .main {
-        background-color: $systemBackgroundD;
-    }
 }
 
 .content-wrapper {
