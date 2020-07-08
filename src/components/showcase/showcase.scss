@@ -1,6 +1,10 @@
 $iconSize: 125px;
 
 .app-icon-wrapper {
+    background-color: #F2F2F7;
+    padding: 1.5em;
+    border-radius: 15px;
+
     img {
         width: $iconSize;
         height: $iconSize;
@@ -35,6 +39,7 @@ $iconSize: 125px;
 }
 
 .showcase-link {
+    text-decoration: none;
     color: white;
     display: inline-block;
     padding: 10px 20px;

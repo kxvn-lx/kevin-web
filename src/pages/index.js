@@ -43,7 +43,7 @@ const IndexPage = () => (
                             appDescription={"NookNook is a companion app for Animal Crossing: New Horizons. It is simple, yet powerful enough to show every informations a player need for the game."}
                         >
                             <ShowcaseContainer>
-                                <a className="showcase-link apple-link" href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">
+                                <a className="showcase-link" href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">
                                     Download from the  App Store
                                 </a>
                             </ShowcaseContainer>
@@ -57,13 +57,18 @@ const IndexPage = () => (
                             appDescription={"Kontax Cam is an open-sourced project I did for iOS device. It's an instant camera app with personalised custom filters and effect."}
                         >
                             <ShowcaseContainer>
-                                <a className="showcase-link github-link" href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">
+                                <a className="showcase-link" href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">
                                     View on github
                                 </a>
                             </ShowcaseContainer>
                         </Showcase>
                     </div>
+                </div>
 
+                <div style={{marginTop: '2em'}}>
+                    <a className="showcase-link" href="https://www.buymeacoffee.com/kevinlaminto" target="_blank" rel="noreferrer">
+                        ☕ Buy me a coffee
+                    </a>
                 </div>
             </div>
 
