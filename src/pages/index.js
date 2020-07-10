@@ -65,8 +65,8 @@ const IndexPage = () => (
                     </div>
                 </div>
 
-                <div style={{marginTop: '2em'}}>
-                    <a className="showcase-link" href="https://www.buymeacoffee.com/kevinlaminto" target="_blank" rel="noreferrer">
+                <div style={{ marginTop: '2em' }}>
+                    <a className="showcase-link" id="buymecoffee" href="https://www.buymeacoffee.com/kevinlaminto" target="_blank" rel="noreferrer">
                         ☕ Buy me a coffee
                     </a>
                 </div>
