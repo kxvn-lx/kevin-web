@@ -4,52 +4,19 @@ $systemGray6: #f2f2f7;
 $label: #000000;
 $secondaryLabel: #8e8e93;
 
-.flexbox {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    flex-direction: row;
-}
-
-@media only screen and (max-width: 1020px) {
-    .flexbox {
-        flex-direction: column;
-    }
-
-    .flexbox .col {
-        margin: 0 !important;
-    }
-
-    .content-wrapper {
-        width: 80vw !important;
-    }
-}
-
-* {
-    color: $label;
-}
-
-.flexbox .col {
-    margin: 0 2em;
-}
-
 .content-wrapper {
-    max-width: 1000px;
-    width: 70vw;
-    margin: 0 auto;
     margin-top: 5em;
+    max-width: 500px;
+    width: 70vw;
 
-    h2 {
+    h1 {
         margin-bottom: 1em;
-        font-weight: 600;
     }
 }
 
-.blog-content-wrapper {
-    max-width: 666px;
 
-    p {
-        margin-bottom: 1em;
+@media only screen and (max-width: 666px) {
+    h1 {
+        font-size: 1.5em  !important;
     }
 }

@@ -12,7 +12,6 @@ export default class footer extends Component {
                     <a href="https://github.com/kxvn-lx" target="_blank" rel="noreferrer">Github</a>
                     <a href="mailto:kevin.laminto@gmail.com" target="_blank" rel="noreferrer">Email</a>
                 </div>
-                <p>Ⓒ Kevin Laminto 2020</p>
             </footer>
         )
     }

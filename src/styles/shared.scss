@@ -4,12 +4,16 @@ $systemGray6: #f2f2f7;
 $label: #000000;
 $secondaryLabel: #8e8e93;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
 
 html {
     box-sizing: border-box;
     font-size: 18px;
     height: 100%;
+}
+
+* {
+    color: black;
 }
 
 *,
@@ -33,6 +37,10 @@ ul {
     font-weight: normal;
 }
 
+ul, ol {
+    margin-left: 1em;
+}
+
 ol,
 ul {
     list-style: none;
@@ -44,7 +52,7 @@ img {
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "Tinos", serif;
 }
 
 .main {
@@ -66,4 +74,13 @@ body {
 
 p {
     line-height: 1.5;
+    margin-bottom: 1em;
+    color: #171717 !important;
 }
+
+.content-wrapper a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+

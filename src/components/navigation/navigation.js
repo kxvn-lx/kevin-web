@@ -9,18 +9,20 @@ export default class navigation extends Component {
             <header>
                 <nav>
                     <div className="site-details">
-                        <h1>
-                            <Link to="/">Kevin Laminto</Link>
-                        </h1>
-                        <p>iOS Developer, interested in UI/UX Design.</p>
+                        {
+                            this.props.isLogoHidden ?
+                                null
+                                :
+                                <h1>
+                                    <Link to="/">Kevin Laminto</Link>
+                                </h1>
+                        }
+
                     </div>
                     <ul>
                         <li>
                             <Link to="/about" activeClassName="active">About</Link>
                         </li>
-                        {/* <li>
-                            <p>Blog</p>
-                        </li> */}
                     </ul>
                 </nav></header>
 

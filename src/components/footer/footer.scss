@@ -4,37 +4,27 @@ $systemGray6: #f2f2f7;
 $label: #000000;
 $secondaryLabel: #8e8e93;
 
-// Dark
-$systemBackgroundD: #000000;
-$systemGray6D: #1c1c1e;
-$labelD: #ffffff;
-$secondaryLabelD: #8e8e93;
-
 footer {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 2em;
     font-size: 0.8em;
-    margin: 2em;
     margin-top: 10em;
     bottom: 0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 
     .footerLink {
         a {
-            margin: 0 0.8em;
+            margin-left: 0.8em;
             text-decoration: none;
         }
     }
 
-    p {
-        color: $secondaryLabelD;
-    }
+    .footerLink > :first-child { margin: 0 !important }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 666px) {
     footer {
-        display: inline;
-        text-align: center;
 
         p {
             margin-top: 1em;

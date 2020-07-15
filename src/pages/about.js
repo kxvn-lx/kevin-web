@@ -3,7 +3,9 @@ import React from "react"
 import SEO from "../components/seo"
 import Navigation from "../components/navigation/navigation.js"
 import Footer from "../components/footer/footer"
+import styled from "styled-components"
 
+// Styles
 import "../styles/shared.scss"
 
 const AboutPage = () => (
@@ -15,31 +17,45 @@ const AboutPage = () => (
         />
         <div className="main">
             <Navigation />
-            <div className="content-wrapper blog-content-wrapper">
-                <h2>Hey! 👋</h2>
-                <p>
-                    Let's keep this short. If you haven't notice, I love building iOS apps in my free time.
-                    It's really fun and challenging. And with the new SwiftUI framework introduced in WWDC19,
-                    iOS development just got more and more excited as ever!<br />
-                </p>
+            <ParentWrapper>
+                <div className="content-wrapper">
+                    <div style={{ marginBottom: '2em' }}>
+                        <h1>Hello.</h1>
+                        <p>
+                            I'm a Monash University graduate with a bachelor of IT in Software Development.
+                            I love building great products that not only provide value, but also great UI/UX design to the user.
+                            My interests are iOS development, UI/UX Design, photography, front-end development, listening to heavy musics and going to gigs!
+                        </p>
 
-                <p>
-                    Apart from building apps, I enjoyed researching in UI/UX to ensure users have the best
-                    experience in using the app.
-                </p>
+                        <p>If i'm not hacking around different techs, you can find me taking photos for my instagram <a href="https://www.instagram.com/kxvn.lx/" target="_blank" rel="noreferrer">kxvn.lx</a>.</p>
+                    </div>
 
-                <p>
-                    I also enjoyed doing photography and making musics in my free time. You can check my instagram here <a href="https://www.instagram.com/kxvn.lx/" target="_blank" rel="noreferrer">instagram.com/kxvn.lx</a>.
-                </p>
+                    <div style={{ marginBottom: '2em' }}>
+                        <h2 style={{ marginBottom: '0.8em' }}>Projects—</h2>
+                        <p>
+                            <b>NookNook: Companion for ACNH</b><br />
+                            Powerful gesture-based Companion app for Animal Crossing: New Horizons.
+                        </p>
+                        <p><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store</a></p>
 
-                <p>
-                    And that's it! Hope to get to know you too! get in touch via my email here  <a href="mailto:kevin.laminto@gmail.com">kevin.laminto@gmail.com</a>
-                </p>
+                        <p>
+                            <b>Kontax Cam</b><br />
+                            Open source instant camera hybrid with custom effects and filters for photographers, by photographers.
+                        </p>
+                        <p><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github</a></p>
+                    </div>
+                </div>
+            </ParentWrapper>
 
-            </div>
             <Footer />
         </div>
     </div>
 )
 
 export default AboutPage
+
+// Styled components
+const ParentWrapper = styled.div`
+    width: 70vw;
+    margin: 0 auto;
+`

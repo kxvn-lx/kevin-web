@@ -2,75 +2,38 @@ import React from "react"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
+// Styles
 import "../styles/shared.scss"
 import "../styles/index.scss"
 
-import nooknook from "../images/nooknook-icon.png"
-import kontaxcam from "../images/kontaxcam-icon.png"
-import Navigation from "../components/navigation/navigation.js"
-
 // Component
-import Showcase from "../components/showcase/showcase"
 import Footer from "../components/footer/footer"
-
-const ShowcaseContainer = styled.div`
-    margin-top: 1em;
-
-    a {
-        font-size: 0.85em;
-        text-decoration: none;
-    }
-`
+import Navigation from "../components/navigation/navigation.js"
 
 const IndexPage = () => (
     <>
         <SEO
-            description="Kevin Laminto, iOS Developer, interested in UI/UX design."
+            description="Kevin Laminto, Software developer, interested in UI/UX design."
             lang="us"
             title="Home"
         />
         <div className="main">
-            <Navigation />
+            <Navigation isLogoHidden={true} />
 
-            <div className="content-wrapper">
-                <h2>PROJECTS</h2>
+            <ParentWrapper>
+                <div className="content-wrapper">
+                    <h1>Hello, i'm Kevin. Software developer living in Melbourne, Australia.</h1>
 
-                <div className="flexbox">
-                    <div className="col" style={{ marginLeft: "0" }}>
-                        <Showcase
-                            appIcon={nooknook}
-                            appTitle={"NookNook: Companion for ACNH"}
-                            appDescription={"NookNook is a companion app for Animal Crossing: New Horizons. It is simple, yet powerful enough to show every informations a player need for the game."}
-                        >
-                            <ShowcaseContainer>
-                                <a className="showcase-link" href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">
-                                    Download from the  App Store
-                                </a>
-                            </ShowcaseContainer>
-                        </Showcase>
-                    </div>
+                    <p>
+                        Currently building iOS apps in my spare time and a front-end developer at <a href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</a> startup.
+                    </p>
 
-                    <div className="col" style={{ marginLeft: "0" }}>
-                        <Showcase
-                            appIcon={kontaxcam}
-                            appTitle={"Kontax Cam"}
-                            appDescription={"Kontax Cam is an open-sourced project I did for iOS device. It's an instant camera app with personalised custom filters and effect."}
-                        >
-                            <ShowcaseContainer>
-                                <a className="showcase-link" href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">
-                                    View on github
-                                </a>
-                            </ShowcaseContainer>
-                        </Showcase>
-                    </div>
+                    <p>
+                        Looking for casual, part-time, or full-time developer position.
+                    </p>
                 </div>
+            </ParentWrapper>
 
-                <div style={{ marginTop: '2em' }}>
-                    <a className="showcase-link" id="buymecoffee" href="https://www.buymeacoffee.com/kevinlaminto" target="_blank" rel="noreferrer">
-                        ☕ Buy me a coffee
-                    </a>
-                </div>
-            </div>
 
             <Footer />
         </div>
@@ -78,3 +41,9 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+// Styled components
+const ParentWrapper = styled.div`
+    width: 70vw;
+    margin: 0 auto;
+`
