@@ -31,15 +31,15 @@ const AboutPage = () => (
                     </div>
 
                     <div style={{ marginBottom: '2em' }}>
-                        <h2 style={{ marginBottom: '0.8em' }}>Projects—</h2>
+                        <h2 style={{ marginBottom: '0.8em' }}>Projects</h2>
                         <p>
-                            <b>NookNook: Companion for ACNH</b><br />
+                            NookNook: Companion for ACNH<br />
                             Powerful gesture-based Companion app for Animal Crossing: New Horizons.
                         </p>
                         <p><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store</a></p>
 
                         <p>
-                            <b>Kontax Cam</b><br />
+                            Kontax Cam<br />
                             Open source instant camera hybrid with custom effects and filters for photographers, by photographers.
                         </p>
                         <p><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github</a></p>
