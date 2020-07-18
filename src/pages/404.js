@@ -3,6 +3,9 @@ import React from "react"
 import SEO from "../components/seo"
 import Navigation from "../components/navigation/navigation.js"
 import Footer from "../components/footer/footer"
+import styled from "styled-components"
+import "../styles/glitch.scss"
+import { Link } from "gatsby"
 
 const NotFoundPage = () => (
     <div>
@@ -13,12 +16,21 @@ const NotFoundPage = () => (
         />
         <div className="main">
             <Navigation />
-            <div className="content-wrapper">
-                <h2>PAGE NOT FOUND</h2>
-            </div>
+            <ParentWrapper>
+                <div className="content-wrapper">
+                    <h2 className="glitch" data-text="PAGE NOT FOUND">PAGE NOT FOUND</h2>
+                    <Link to="/">Back to home</Link>
+                </div>
+            </ParentWrapper>
             <Footer />
         </div>
     </div>
 )
 
 export default NotFoundPage
+
+// Styled components
+const ParentWrapper = styled.div`
+    width: 70vw;
+    margin: 0 auto;
+`

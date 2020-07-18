@@ -32,17 +32,25 @@ const AboutPage = () => (
 
                     <div style={{ marginBottom: '2em' }}>
                         <h2 style={{ marginBottom: '0.8em' }}>Projects</h2>
-                        <p>
-                            NookNook: Companion for ACNH<br />
-                            Powerful gesture-based Companion app for Animal Crossing: New Horizons.
-                        </p>
-                        <p><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store</a></p>
+                        <ProjectWrapper>
+                            <h3>NookNook: Companion for ACNH</h3>
+                            <p>Powerful gesture-based Companion app for Animal Crossing: New Horizons.
+                            </p>
+                            <p><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store</a></p>
+                        </ProjectWrapper>
 
-                        <p>
-                            Kontax Cam<br />
-                            Open source instant camera hybrid with custom effects and filters for photographers, by photographers.
-                        </p>
-                        <p><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github</a></p>
+                        <ProjectWrapper>
+                            <h3>Kontax Cam</h3>
+                            <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
+                            <p><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github</a></p>
+                        </ProjectWrapper>
+
+                        <ProjectWrapper>
+                            <h3>Spendt</h3>
+                            <p>Dead simple and minimalistic spending tracker built with React, on top of Apple's Human Interface Guidelines.</p>
+                            <p><a href="https://spendt.netlify.app" target="_blank" rel="noreferrer">Visit the web app</a></p>
+                        </ProjectWrapper>
+
                     </div>
                 </div>
             </ParentWrapper>
@@ -58,4 +66,10 @@ export default AboutPage
 const ParentWrapper = styled.div`
     width: 70vw;
     margin: 0 auto;
+`
+
+const ProjectWrapper = styled.div`
+    padding: 1em;
+    margin-top: 1em;
+    background: #F2F2F7;
 `
