@@ -51,6 +51,13 @@ const AboutPage = () => (
                             <p><a href="https://spendt.netlify.app" target="_blank" rel="noreferrer">Visit the web app</a></p>
                         </ProjectWrapper>
 
+
+                        <ProjectWrapper>
+                            <h3>Ghibliii</h3>
+                            <p>Studio Ghibli movie database for iOS, iPadOS, and MacOS. 100% written in Swift.</p>
+                            <p><a href="https://github.com/kxvn-lx/Ghibliii" target="_blank" rel="noreferrer">View on github</a></p>
+                        </ProjectWrapper>
+
                     </div>
                 </div>
             </ParentWrapper>
