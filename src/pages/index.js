@@ -13,7 +13,7 @@ import Navigation from "../components/navigation/navigation.js"
 const IndexPage = () => (
     <>
         <SEO
-            description="Kevin Laminto, Software developer, interested in UI/UX design."
+            description="Kevin Laminto, software developer, interested in UI/UX design."
             lang="us"
             title="Home"
         />

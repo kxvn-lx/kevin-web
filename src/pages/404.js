@@ -4,13 +4,12 @@ import SEO from "../components/seo"
 import Navigation from "../components/navigation/navigation.js"
 import Footer from "../components/footer/footer"
 import styled from "styled-components"
-import "../styles/glitch.scss"
 import { Link } from "gatsby"
 
 const NotFoundPage = () => (
     <div>
         <SEO
-            description="Kevin Laminto, iOS Developer, interested in UI/UX design."
+            description="Kevin Laminto, software developer, interested in UI/UX design."
             lang="us"
             title="404"
         />
@@ -18,7 +17,7 @@ const NotFoundPage = () => (
             <Navigation />
             <ParentWrapper>
                 <div className="content-wrapper">
-                    <h2 className="glitch" data-text="PAGE NOT FOUND">PAGE NOT FOUND</h2>
+                    <h2>PAGE NOT FOUND</h2>
                     <Link to="/">Back to home</Link>
                 </div>
             </ParentWrapper>
