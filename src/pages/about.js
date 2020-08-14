@@ -11,7 +11,7 @@ import "../styles/shared.scss"
 const AboutPage = () => (
     <div>
         <SEO
-            description="Kevin Laminto, iOS Developer, interested in UI/UX design."
+            description="Kevin Laminto - iOS Developer, interested in UI/UX design."
             lang="us"
             title="About"
         />
@@ -34,28 +34,36 @@ const AboutPage = () => (
                         <h2 style={{ marginBottom: '0.8em' }}>Projects</h2>
                         <ProjectWrapper>
                             <h3>NookNook: Companion for ACNH</h3>
-                            <p>Powerful gesture-based Companion app for Animal Crossing: New Horizons.
-                            </p>
-                            <p><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store</a></p>
+                            <p>Powerful gesture-based Companion app for Animal Crossing: New Horizons.</p>
+                            <ul>
+                                <li><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store</a></li>
+                            </ul>
                         </ProjectWrapper>
 
                         <ProjectWrapper>
                             <h3>Kontax Cam</h3>
                             <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
-                            <p><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github</a></p>
+                            <ul>
+                                <li><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github</a></li>
+                                <li><a href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Visit the website</a></li>
+                            </ul>
                         </ProjectWrapper>
 
                         <ProjectWrapper>
                             <h3>Spendt</h3>
                             <p>Dead simple and minimalistic spending tracker built with React, on top of Apple's Human Interface Guidelines.</p>
-                            <p><a href="https://spendt.netlify.app" target="_blank" rel="noreferrer">Visit the web app</a></p>
+                            <ul>
+                                <li><a href="https://spendt.netlify.app" target="_blank" rel="noreferrer">Visit the web app</a></li>
+                            </ul>
                         </ProjectWrapper>
 
 
                         <ProjectWrapper>
                             <h3>Ghibliii</h3>
                             <p>Studio Ghibli movie database for iOS, iPadOS, and MacOS. 100% written in Swift.</p>
-                            <p><a href="https://github.com/kxvn-lx/Ghibliii" target="_blank" rel="noreferrer">View on github</a></p>
+                            <ul>
+                                <li><a href="https://github.com/kxvn-lx/Ghibliii" target="_blank" rel="noreferrer">View on github</a></li>
+                            </ul>
                         </ProjectWrapper>
 
                     </div>
@@ -79,4 +87,12 @@ const ProjectWrapper = styled.div`
     padding: 1em;
     margin-top: 1em;
     background: #F2F2F7;
+    border-radius: 10px;
+
+    h3 {
+        font-weight: 600;
+    }
+    p {
+        color: #8E8E93;
+    }
 `

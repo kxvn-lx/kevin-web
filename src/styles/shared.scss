@@ -4,11 +4,11 @@ $systemGray6: #f2f2f7;
 $label: #000000;
 $secondaryLabel: #8e8e93;
 
-@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap');
 
 html {
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 16px;
     height: 100%;
 }
 
@@ -46,13 +46,17 @@ ul {
     list-style: none;
 }
 
+li {
+    margin-top: 0.5em;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 body {
-    font-family: "Tinos", serif;
+    font-family: 'Assistant', sans-serif;
 }
 
 .main {
@@ -75,7 +79,7 @@ body {
 p {
     line-height: 1.5;
     margin-bottom: 1em;
-    color: #171717 !important;
+    color: #171717;
 }
 
 .content-wrapper a {
