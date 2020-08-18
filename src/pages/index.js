@@ -18,14 +18,15 @@ const IndexPage = () => (
             title="Home"
         />
         <div className="main">
-            <Navigation isLogoHidden={true} />
+            <Navigation />
 
             <ParentWrapper>
                 <div className="content-wrapper">
                     <h1>Hello, i'm Kevin. Software developer living in Melbourne, Australia.</h1>
 
                     <p>
-                        Currently building iOS apps in my spare time and a front-end developer at <a href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</a> startup.
+                        Currently building <KontaxA className="colourful-a" href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</KontaxA> in my spare time 
+                        and a front-end developer at <EsperA className="colourful-a" href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</EsperA> startup.
                     </p>
 
                     <p>
@@ -46,4 +47,22 @@ export default IndexPage
 const ParentWrapper = styled.div`
     width: 70vw;
     margin: 0 auto;
+`
+
+const KontaxA = styled.a`
+    color: #a18cd1;
+    background-color: rgba(161, 140, 209, 0.1);
+
+    &:hover {
+        background-color: rgba(161, 140, 209, 0.15);
+  }
+`
+
+const EsperA = styled.a`
+    color: #fda085;
+    background-color: rgba(253, 161, 133, 0.1);
+
+    &:hover {
+        background-color: rgba(253, 161, 133, 0.15);
+    }
 `

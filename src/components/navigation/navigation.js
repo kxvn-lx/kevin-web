@@ -9,14 +9,9 @@ export default class navigation extends Component {
             <header>
                 <nav>
                     <div className="site-details">
-                        {
-                            this.props.isLogoHidden ?
-                                null
-                                :
-                                <h1>
-                                    <Link to="/">Kevin Laminto</Link>
-                                </h1>
-                        }
+                        <h1>
+                            <Link to="/">Kevin Laminto</Link>
+                        </h1>
 
                     </div>
                     <ul>

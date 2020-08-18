@@ -33,19 +33,28 @@ const AboutPage = () => (
                     <div style={{ marginBottom: '2em' }}>
                         <h2 style={{ marginBottom: '0.8em' }}>Projects</h2>
                         <ProjectWrapper>
-                            <h3>NookNook: Companion for ACNH</h3>
-                            <p>Powerful gesture-based Companion app for Animal Crossing: New Horizons.</p>
+                            <CurrentWrapper>Current</CurrentWrapper>
+                            <h3>Kontax Cam</h3>
+                            <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
                             <ul>
-                                <li><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store</a></li>
+                                <li><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github →</a></li>
+                                <li><a href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Visit the website →</a></li>
                             </ul>
                         </ProjectWrapper>
 
                         <ProjectWrapper>
-                            <h3>Kontax Cam</h3>
-                            <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
+                            <h3>Ghibliii</h3>
+                            <p>Studio Ghibli movie database for iOS, iPadOS, and MacOS. 100% written in Swift.</p>
                             <ul>
-                                <li><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github</a></li>
-                                <li><a href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Visit the website</a></li>
+                                <li><a href="https://github.com/kxvn-lx/Ghibliii" target="_blank" rel="noreferrer">View on github →</a></li>
+                            </ul>
+                        </ProjectWrapper>
+
+                        <ProjectWrapper>
+                            <h3>NookNook: Companion for ACNH</h3>
+                            <p>Powerful gesture-based Companion app for Animal Crossing: New Horizons.</p>
+                            <ul>
+                                <li><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store →</a></li>
                             </ul>
                         </ProjectWrapper>
 
@@ -53,16 +62,7 @@ const AboutPage = () => (
                             <h3>Spendt</h3>
                             <p>Dead simple and minimalistic spending tracker built with React, on top of Apple's Human Interface Guidelines.</p>
                             <ul>
-                                <li><a href="https://spendt.netlify.app" target="_blank" rel="noreferrer">Visit the web app</a></li>
-                            </ul>
-                        </ProjectWrapper>
-
-
-                        <ProjectWrapper>
-                            <h3>Ghibliii</h3>
-                            <p>Studio Ghibli movie database for iOS, iPadOS, and MacOS. 100% written in Swift.</p>
-                            <ul>
-                                <li><a href="https://github.com/kxvn-lx/Ghibliii" target="_blank" rel="noreferrer">View on github</a></li>
+                                <li><a href="https://spendt.netlify.app" target="_blank" rel="noreferrer">Visit the web app →</a></li>
                             </ul>
                         </ProjectWrapper>
 
@@ -89,10 +89,19 @@ const ProjectWrapper = styled.div`
     background: #F2F2F7;
     border-radius: 10px;
 
-    h3 {
-        font-weight: 600;
-    }
     p {
-        color: #8E8E93;
+        color: #404040;
     }
+`
+
+const CurrentWrapper = styled.span`
+    font-weight: 400;
+    font-size: 0.6rem;
+    border: 1px solid #FD9426;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FD9426;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    display: inline-block;
 `
