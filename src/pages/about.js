@@ -32,12 +32,11 @@ const AboutPage = () => (
 
                         <p>
                             I'm interested in building mobile apps (iOS) and web apps.
-                            Hence the technologies that I'm using quite a lot are are React, Gatsby, Styled components, TailwindCSS, and GraphQL for the web -
-                            and Swift, and SwiftUI for iOS Development.
+                            Hence the technologies that I'm using quite a lot are React, Gatsby, Styled components, TailwindCSS, and GraphQL for the web - Swift and SwiftUI for iOS.
                         </p>
 
                         <p>
-                            When I'm not hacking around different techs, I enjoy doing <a href="https://www.instagram.com/kxvn.lx/" target="_blank" rel="noreferrer">photography</a>,
+                            When I'm not hacking around different techs, I enjoy doing <a className="colourful-a normal-link" href="https://www.instagram.com/kxvn.lx/" target="_blank" rel="noreferrer">photography</a>,
                             listening and going to metal concerts, and chill while watching a movie.
                         </p>
                     </div>

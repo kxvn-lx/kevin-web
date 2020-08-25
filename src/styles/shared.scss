@@ -88,7 +88,7 @@ body {
 p {
     line-height: 1.5;
     margin-bottom: 1em;
-    color: #171717;
+    color: #404040;
 }
 
 .colourful-a {
@@ -100,4 +100,14 @@ p {
     border-radius: 6px;
     text-decoration: none;
     line-height: 1.4;
+}
+
+.normal-link {
+    color: #16a38c;
+    background-color: #c0faf193;
+}
+
+.normal-link:hover {
+    color: #128d78;
+    background-color: #b1fcf193;
 }

@@ -22,7 +22,7 @@ const IndexPage = () => (
 
             <ParentWrapper>
                 <div className="content-wrapper">
-                    <h1>Hello, i'm Kevin. Software developer living in Melbourne, Australia.</h1>
+                    <h1>Hello, i'm Kevin —<br />Software developer living in Melbourne, Australia.</h1>
 
                     <p>
                         Currently building <KontaxA className="colourful-a" href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</KontaxA> in my spare time
@@ -55,7 +55,7 @@ const KontaxA = styled.a`
 
     &:hover {
         background-color: rgba(161, 140, 209, 0.15);
-  }
+    }
 `
 
 const EsperA = styled.a`
