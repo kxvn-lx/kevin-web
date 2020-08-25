@@ -25,7 +25,7 @@ const IndexPage = () => (
                     <h1>Hello, i'm Kevin. Software developer living in Melbourne, Australia.</h1>
 
                     <p>
-                        Currently building <KontaxA className="colourful-a" href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</KontaxA> in my spare time 
+                        Currently building <KontaxA className="colourful-a" href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</KontaxA> in my spare time
                         and a front-end developer at <EsperA className="colourful-a" href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</EsperA> startup.
                     </p>
 

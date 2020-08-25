@@ -20,14 +20,26 @@ const AboutPage = () => (
             <ParentWrapper>
                 <div className="content-wrapper">
                     <div style={{ marginBottom: '2em' }}>
+                        <AboutImageWrapper>
+                            <img src={require('../images/kevin.jpeg')} alt="kevin profile" />
+                        </AboutImageWrapper>
+
                         <h1>Hello.</h1>
                         <p>
-                            I'm a Monash University graduate with a bachelor of IT in Software Development.
-                            I love building great products that not only provide value, but also great UI/UX design to the user.
-                            My interests are iOS development, UI/UX Design, photography, front-end development, listening to heavy musics and going to gigs!
+                            I'm a recent graduate of Monash University with a bachelor of IT in Software Development.
+                            I love building products with a clean user interface whilst having impeccable value.
                         </p>
 
-                        <p>If i'm not hacking around different techs, you can find me taking photos for my instagram <a href="https://www.instagram.com/kxvn.lx/" target="_blank" rel="noreferrer">kxvn.lx</a>.</p>
+                        <p>
+                            I'm interested in building mobile apps (iOS) and web apps.
+                            Hence the technologies that I'm using quite a lot are are React, Gatsby, Styled components, TailwindCSS, and GraphQL for the web -
+                            and Swift, and SwiftUI for iOS Development.
+                        </p>
+
+                        <p>
+                            When I'm not hacking around different techs, I enjoy doing <a href="https://www.instagram.com/kxvn.lx/" target="_blank" rel="noreferrer">photography</a>,
+                            listening and going to metal concerts, and chill while watching a movie.
+                        </p>
                     </div>
 
                     <div style={{ marginBottom: '2em' }}>
@@ -78,6 +90,20 @@ const AboutPage = () => (
 export default AboutPage
 
 // Styled components
+const AboutImageWrapper = styled.div`
+    margin-bottom: 2rem;
+
+    @media(max-width: 768px) {
+        text-align: center;
+    }
+
+    img {
+        width: 15rem;
+        height: auto;
+        border-radius: 999px;
+    }
+`
+
 const ParentWrapper = styled.div`
     width: 70vw;
     margin: 0 auto;
@@ -90,7 +116,11 @@ const ProjectWrapper = styled.div`
     border-radius: 10px;
 
     p {
-        color: #404040;
+        color: #303030;
+    }
+
+    a {
+        text-decoration: none;
     }
 `
 
