@@ -22,7 +22,8 @@ const IndexPage = () => (
 
             <ParentWrapper>
                 <div className="content-wrapper">
-                    <h1>Hello, i'm Kevin —<br />Software developer living in Melbourne, Australia.</h1>
+                    <img className="memoji-img" style={{marginBottom: '1rem'} }src={require('../images/memoji-hi.png')} alt="kevin's memoji"/>
+                    <h1>Hi, i'm Kevin —<br />Software developer living in Melbourne, Australia.</h1>
 
                     <p>
                         Currently building <KontaxA className="colourful-a" href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</KontaxA> in my spare time

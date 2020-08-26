@@ -24,7 +24,7 @@ const AboutPage = () => (
                             <img src={require('../images/kevin.jpeg')} alt="kevin profile" />
                         </AboutImageWrapper>
 
-                        <h1>Hello.</h1>
+                        <h1>👋 Hello.</h1>
                         <p>
                             I'm a recent graduate of Monash University with a bachelor of IT in Software Development.
                             I love building products with a clean user interface whilst having impeccable value.
@@ -91,6 +91,7 @@ export default AboutPage
 // Styled components
 const AboutImageWrapper = styled.div`
     margin-bottom: 2rem;
+    
 
     @media(max-width: 768px) {
         text-align: center;
@@ -100,6 +101,7 @@ const AboutImageWrapper = styled.div`
         width: 15rem;
         height: auto;
         border-radius: 999px;
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,.25)!important;
     }
 `
 

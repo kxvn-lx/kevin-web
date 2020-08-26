@@ -5,10 +5,11 @@ html {
 }
 
 a {
-    color: #157EFB;
+    color: #157efb;
 }
 
-html, body {
+html,
+body {
     background-color: #fafafa;
 }
 
@@ -107,4 +108,12 @@ p {
 .normal-link:hover {
     color: #128d78;
     background-color: #b1fcf193;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
 }

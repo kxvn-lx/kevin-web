@@ -10,7 +10,7 @@ export default class navigation extends Component {
                 <nav>
                     <div className="site-details">
                         <h1>
-                            <Link to="/">Kevin Laminto</Link>
+                            <Link to="/">Kevin Laminto 🧑‍💻</Link>
                         </h1>
 
                     </div>

@@ -1,8 +1,3 @@
-// Light
-$systemBackground: #ffffff;
-$systemGray6: #f2f2f7;
-$label: #000000;
-$secondaryLabel: #8e8e93;
 
 footer {
     width: 70vw;
@@ -26,8 +21,9 @@ footer {
     }
 }
 
-@media only screen and (max-width: 666px) {
+@media only screen and (max-width: 768px) {
     footer {
+        text-align: center;
         p {
             margin-top: 1em;
         }

@@ -9,6 +9,16 @@ $secondaryLabel: #8e8e93;
     max-width: 500px;
     width: 70vw;
 
+    .memoji-img {
+        width: 12.5rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .memoji-img {
+            width: 10rem;
+        }
+    }
+
     h1 {
         margin-bottom: 1em;
     }
