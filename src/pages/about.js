@@ -44,7 +44,7 @@ const AboutPage = () => (
                     <div style={{ marginBottom: '2em' }}>
                         <h2 style={{ marginBottom: '0.8em' }}>Projects</h2>
                         <ProjectWrapper>
-                            <CurrentWrapper>Current</CurrentWrapper>
+                            <CurrentWrapper className="pulse">Current</CurrentWrapper>
                             <h3>Kontax Cam</h3>
                             <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
                             <ul>
@@ -98,10 +98,9 @@ const AboutImageWrapper = styled.div`
     }
 
     img {
-        width: 15rem;
+        width: 12.5rem;
         height: auto;
         border-radius: 999px;
-        box-shadow: 0 25px 50px -12px rgba(0,0,0,.25)!important;
     }
 `
 
@@ -111,9 +110,10 @@ const ParentWrapper = styled.div`
 `
 
 const ProjectWrapper = styled.div`
-    padding: 1em;
+    /* padding: 1em; */
+    padding: 1em 0;
     margin-top: 1em;
-    background: #F2F2F7;
+    /* background: #F2F2F7; */
     border-radius: 10px;
 
     p {

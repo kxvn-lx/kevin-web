@@ -115,5 +115,23 @@ img {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    user-drag: none;
 }
+
+.pulse {
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(253, 149, 38, 0.4);
+      box-shadow: 0 0 0 0 rgba(253, 149, 38, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(253, 149, 38, 0);
+        box-shadow: 0 0 0 10px rgba(253, 149, 38, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(253, 149, 38, 0);
+        box-shadow: 0 0 0 0 rgba(253, 149, 38, 0);
+    }
+  }
