@@ -49,7 +49,7 @@ const AboutPage = () => (
                             <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
                             <ul>
                                 <li><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github →</a></li>
-                                <li><a href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Visit the website →</a></li>
+                                <li><a href="https://kontax.cam" target="_blank" rel="noreferrer">Visit the website →</a></li>
                             </ul>
                         </ProjectWrapper>
 
@@ -100,7 +100,6 @@ const AboutImageWrapper = styled.div`
     img {
         width: 12.5rem;
         height: auto;
-        border-radius: 999px;
     }
 `
 

@@ -22,7 +22,6 @@ const IndexPage = () => (
 
             <ParentWrapper>
                 <div className="content-wrapper">
-                    <img className="memoji-img" style={{marginBottom: '1rem'} }src={require('../images/memoji-hi.png')} alt="kevin's memoji"/>
                     <h1>Hi, i'm Kevin —<br />Software developer living in Melbourne, Australia.</h1>
 
                     <p>
