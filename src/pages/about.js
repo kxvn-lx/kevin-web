@@ -54,6 +54,14 @@ const AboutPage = () => (
                         </ProjectWrapper>
 
                         <ProjectWrapper>
+                            <h3>Esper Satellites Imagery</h3>
+                            <p>Designed and developed the landing page of the website</p>
+                            <ul>
+                                <li><a href="https://espersatellites.co" target="_blank" rel="noreferrer">View the website →</a></li>
+                            </ul>
+                        </ProjectWrapper>
+
+                        <ProjectWrapper>
                             <h3>Ghibliii</h3>
                             <p>Studio Ghibli movie database for iOS, iPadOS, and MacOS. 100% written in Swift.</p>
                             <ul>
