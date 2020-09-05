@@ -124,6 +124,10 @@ const ContentWrapper = styled.div`
 const ParentWrapper = styled.div`
     width: 70vw;
     margin: 0 auto;
+
+    @media(max-width: 768px) {
+        width: 90vw;
+    }
 `
 
 const ProjectWrapper = styled.div`

@@ -46,6 +46,10 @@ export default IndexPage
 const ParentWrapper = styled.div`
     width: 70vw;
     margin: 0 auto;
+
+    @media(max-width: 768px) {
+        width: 90vw;
+    }
 `
 
 const ContentWrapper = styled.div`
