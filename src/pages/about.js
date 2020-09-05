@@ -18,13 +18,13 @@ const AboutPage = () => (
         <div className="main">
             <Navigation />
             <ParentWrapper>
-                <div className="content-wrapper">
+                <ContentWrapper>
                     <div style={{ marginBottom: '2em' }}>
                         <AboutImageWrapper>
-                            <img src={require('../images/kevin.jpeg')} alt="kevin profile" />
+                            <img src={require('../images/kevin.jpg')} alt="kevin profile" />
                         </AboutImageWrapper>
 
-                        <h1>👋 Hello.</h1>
+                        <p>Hello.</p>
                         <p>
                             I'm a recent graduate of Monash University with a bachelor of IT in Software Development.
                             I love building products with a clean user interface whilst having impeccable value.
@@ -41,8 +41,9 @@ const AboutPage = () => (
                         </p>
                     </div>
 
-                    <div style={{ marginBottom: '2em' }}>
-                        <h2 style={{ marginBottom: '0.8em' }}>Projects</h2>
+                    <div style={{ marginBottom: '5rem', marginTop: '7.5rem' }}>
+                        <p>Projects</p>
+
                         <ProjectWrapper>
                             <CurrentWrapper className="pulse">Current</CurrentWrapper>
                             <h3>Kontax Cam</h3>
@@ -53,6 +54,8 @@ const AboutPage = () => (
                             </ul>
                         </ProjectWrapper>
 
+                        <div className="divider"></div>
+
                         <ProjectWrapper>
                             <h3>Esper Satellites Imagery</h3>
                             <p>Designed and developed the landing page of the website</p>
@@ -60,6 +63,8 @@ const AboutPage = () => (
                                 <li><a href="https://espersatellites.co" target="_blank" rel="noreferrer">View the website →</a></li>
                             </ul>
                         </ProjectWrapper>
+
+                        <div className="divider"></div>
 
                         <ProjectWrapper>
                             <h3>Ghibliii</h3>
@@ -69,6 +74,8 @@ const AboutPage = () => (
                             </ul>
                         </ProjectWrapper>
 
+                        <div className="divider"></div>
+
                         <ProjectWrapper>
                             <h3>NookNook: Companion for ACNH</h3>
                             <p>Powerful gesture-based Companion app for Animal Crossing: New Horizons.</p>
@@ -76,6 +83,8 @@ const AboutPage = () => (
                                 <li><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store →</a></li>
                             </ul>
                         </ProjectWrapper>
+
+                        <div className="divider"></div>
 
                         <ProjectWrapper>
                             <h3>Spendt</h3>
@@ -86,7 +95,7 @@ const AboutPage = () => (
                         </ProjectWrapper>
 
                     </div>
-                </div>
+                </ContentWrapper>
             </ParentWrapper>
 
             <Footer />
@@ -104,11 +113,12 @@ const AboutImageWrapper = styled.div`
     @media(max-width: 768px) {
         text-align: center;
     }
+`
 
-    img {
-        width: 12.5rem;
-        height: auto;
-    }
+const ContentWrapper = styled.div`
+    margin-top: 10rem;
+    max-width: 450px;
+
 `
 
 const ParentWrapper = styled.div`
@@ -117,28 +127,25 @@ const ParentWrapper = styled.div`
 `
 
 const ProjectWrapper = styled.div`
-    /* padding: 1em; */
     padding: 1em 0;
     margin-top: 1em;
-    /* background: #F2F2F7; */
-    border-radius: 10px;
 
-    p {
-        color: #303030;
+    h3 {
+        font-size: 1rem;
+        font-weight: 400;
     }
 
-    a {
-        text-decoration: none;
+    p {
+        opacity: .75;
     }
 `
 
 const CurrentWrapper = styled.span`
-    font-weight: 400;
     font-size: 0.6rem;
-    border: 1px solid #FD9426;
+    border: 1px solid #F06449;
     padding: 5px 10px;
     border-radius: 5px;
-    color: #FD9426;
+    color: #F06449;
     text-align: center;
     margin-bottom: 0.5rem;
     display: inline-block;

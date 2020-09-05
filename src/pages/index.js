@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 // Styles
 import "../styles/shared.scss"
-import "../styles/index.scss"
 
 // Component
 import Footer from "../components/footer/footer"
@@ -21,18 +20,18 @@ const IndexPage = () => (
             <Navigation />
 
             <ParentWrapper>
-                <div className="content-wrapper">
-                    <h1>Hi, i'm Kevin —<br />Software developer living in Melbourne, Australia.</h1>
-
+                <ContentWrapper>
+                    <p>Hi, i'm Kevin — Software developer living in Melbourne, Australia.</p>
+                    <div className="divider"></div>
                     <p>
-                        Currently building <KontaxA className="colourful-a" href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</KontaxA> in my spare time
-                        and a front-end developer at <EsperA className="colourful-a" href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</EsperA> startup.
+                        Currently building <a href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</a> in my spare time
+                        and a front-end developer at <a href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</a> startup.
                     </p>
 
                     <p>
                         Looking for casual, part-time, or full-time developer position.
                     </p>
-                </div>
+                </ContentWrapper>
             </ParentWrapper>
 
 
@@ -49,20 +48,7 @@ const ParentWrapper = styled.div`
     margin: 0 auto;
 `
 
-const KontaxA = styled.a`
-    color: #a18cd1;
-    background-color: rgba(161, 140, 209, 0.1);
-
-    &:hover {
-        background-color: rgba(161, 140, 209, 0.15);
-    }
-`
-
-const EsperA = styled.a`
-    color: #fda085;
-    background-color: rgba(253, 161, 133, 0.1);
-
-    &:hover {
-        background-color: rgba(253, 161, 133, 0.15);
-    }
+const ContentWrapper = styled.div`
+    margin-top: 5em;
+    max-width: 450px;
 `
