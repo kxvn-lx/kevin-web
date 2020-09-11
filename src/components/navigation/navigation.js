@@ -15,6 +15,9 @@ export default class navigation extends Component {
                         <li>
                             <Link to="/about" activeClassName="active">About</Link>
                         </li>
+                        <li>
+                            <Link to="/resume" activeClassName="active">Resume</Link>
+                        </li>
                     </ul>
                 </nav>
             </header>
