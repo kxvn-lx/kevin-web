@@ -42,7 +42,7 @@ const AboutPage = () => (
                     </div>
 
                     <div style={{ marginBottom: '5rem', marginTop: '7.5rem' }}>
-                        <p>Projects</p>
+                        <p>Selected works / projects</p>
 
                         <ProjectWrapper>
                             <CurrentWrapper className="pulse">Current</CurrentWrapper>
@@ -83,17 +83,15 @@ const AboutPage = () => (
                                 <li><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store →</a></li>
                             </ul>
                         </ProjectWrapper>
+                    </div>
 
-                        <div className="divider"></div>
+                    <div style={{ marginBottom: '5rem', marginTop: '7.5rem' }}>
+                        <p>Selected designs</p>
 
                         <ProjectWrapper>
-                            <h3>Spendt</h3>
-                            <p>Dead simple and minimalistic spending tracker built with React, on top of Apple's Human Interface Guidelines.</p>
-                            <ul>
-                                <li><a href="https://spendt.netlify.app" target="_blank" rel="noreferrer">Visit the web app →</a></li>
-                            </ul>
+                            <img src={require('../images/vsco-mac.png')} alt="VSCO for MAC design" />
+                            <h3>VSCO for MacOS concept (Sep 2020)</h3>
                         </ProjectWrapper>
-
                     </div>
                 </ContentWrapper>
             </ParentWrapper>
