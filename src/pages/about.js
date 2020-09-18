@@ -49,7 +49,7 @@ const AboutPage = () => (
                             <h3>Kontax Cam</h3>
                             <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
                             <ul>
-                                <li><a href="https://github.com/kxvn-lx/Kontax-Cam" target="_blank" rel="noreferrer">View on github →</a></li>
+                                <li><a href="https://apps.apple.com/app/kontax-cam/id1527110773" target="_blank" rel="noreferrer">Download on the  app store →</a></li>
                                 <li><a href="https://kontax.cam" target="_blank" rel="noreferrer">Visit the website →</a></li>
                             </ul>
                         </ProjectWrapper>
