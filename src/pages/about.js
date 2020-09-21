@@ -67,6 +67,26 @@ const AboutPage = () => (
                         <div className="divider"></div>
 
                         <ProjectWrapper>
+                            <h3>My photography portfolio website</h3>
+                            <p>Designed and developed my own photography portfolio website using React, TailwindCSS, and contentful integration. Opensourced and can be accessed via github.</p>
+                            <ul>
+                                <li><a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">Visit the website →</a></li>
+                            </ul>
+                        </ProjectWrapper>
+
+                        <div className="divider"></div>
+
+                        <ProjectWrapper>
+                            <h3>sMasheDe</h3>
+                            <p>Developed the landing page with React and Tailwind, integrated with Mailchimp.</p>
+                            <ul>
+                                <li><a href="https://smashe.de" target="_blank" rel="noreferrer">Visit the website →</a></li>
+                            </ul>
+                        </ProjectWrapper>
+
+                        <div className="divider"></div>
+
+                        <ProjectWrapper>
                             <h3>Ghibliii</h3>
                             <p>Studio Ghibli movie database for iOS, iPadOS, and MacOS. 100% written in Swift.</p>
                             <ul>
