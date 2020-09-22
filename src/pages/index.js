@@ -24,7 +24,7 @@ const IndexPage = () => (
                     <p>Hi, i'm Kevin — Software developer living in Melbourne, Australia.</p>
                     <div className="divider"></div>
                     <p>
-                        Currently building <a href="https://kontaxcam.netlify.app" target="_blank" rel="noreferrer">Kontax Cam</a> in my spare time
+                        Currently building <a href="https://kontax.cam" target="_blank" rel="noreferrer">Kontax Cam</a> in my spare time,
                         and a front-end developer at <a href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</a> startup.
                     </p>
 

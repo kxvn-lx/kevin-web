@@ -36,7 +36,7 @@ const AboutPage = () => (
                         </p>
 
                         <p>
-                            When I'm not hacking around different techs, I enjoy doing <a className="colourful-a normal-link" href="https://www.instagram.com/kxvn.lx/" target="_blank" rel="noreferrer">photography</a>,
+                            When I'm not hacking around different techs, I enjoy doing <a className="colourful-a normal-link" href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">photography</a>,
                             listening and going to metal concerts, and chill while watching a movie.
                         </p>
                     </div>
@@ -47,10 +47,21 @@ const AboutPage = () => (
                         <ProjectWrapper>
                             <CurrentWrapper className="pulse">Current</CurrentWrapper>
                             <h3>Kontax Cam</h3>
-                            <p>Open source instant camera hybrid with custom effects and filters for photographers, by photographers.</p>
+                            <p>Open source instant camera hybrid app for film and digital photographers.</p>
                             <ul>
                                 <li><a href="https://apps.apple.com/app/kontax-cam/id1527110773" target="_blank" rel="noreferrer">Download on the  app store →</a></li>
                                 <li><a href="https://kontax.cam" target="_blank" rel="noreferrer">Visit the website →</a></li>
+                            </ul>
+                        </ProjectWrapper>
+
+                        <div className="divider"></div>
+
+                        <ProjectWrapper>
+                            <h3>Personal photography portfolio website</h3>
+                            <p>Designed and developed my own photography portfolio website using React, TailwindCSS, and contentful integration. Opensourced and can be accessed via github.</p>
+                            <ul>
+                                <li><a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">Visit the website →</a></li>
+                                <li><a href="https://github.com/kxvn-lx/kevinlaminto-photography" target="_blank" rel="noreferrer">View on github →</a></li>
                             </ul>
                         </ProjectWrapper>
 
@@ -61,16 +72,6 @@ const AboutPage = () => (
                             <p>Designed and developed the landing page of the website</p>
                             <ul>
                                 <li><a href="https://espersatellites.co" target="_blank" rel="noreferrer">View the website →</a></li>
-                            </ul>
-                        </ProjectWrapper>
-
-                        <div className="divider"></div>
-
-                        <ProjectWrapper>
-                            <h3>My photography portfolio website</h3>
-                            <p>Designed and developed my own photography portfolio website using React, TailwindCSS, and contentful integration. Opensourced and can be accessed via github.</p>
-                            <ul>
-                                <li><a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">Visit the website →</a></li>
                             </ul>
                         </ProjectWrapper>
 
