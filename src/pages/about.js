@@ -57,11 +57,10 @@ const AboutPage = () => (
                         <div className="divider"></div>
 
                         <ProjectWrapper>
-                            <h3>Personal photography portfolio website</h3>
-                            <p>Designed and developed my own photography portfolio website using React, TailwindCSS, and contentful integration. Opensourced and can be accessed via github.</p>
+                            <h3>Personal photography portfolio</h3>
+                            <p>Designed and developed my own photography portfolio website using React, TailwindCSS, and contentful integration.</p>
                             <ul>
                                 <li><a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">Visit the website →</a></li>
-                                <li><a href="https://github.com/kxvn-lx/kevinlaminto-photography" target="_blank" rel="noreferrer">View on github →</a></li>
                             </ul>
                         </ProjectWrapper>
 
@@ -69,7 +68,7 @@ const AboutPage = () => (
 
                         <ProjectWrapper>
                             <h3>Esper Satellites Imagery</h3>
-                            <p>Designed and developed the landing page of the website</p>
+                            <p>Designed and developed the landing page of the company</p>
                             <ul>
                                 <li><a href="https://espersatellites.co" target="_blank" rel="noreferrer">View the website →</a></li>
                             </ul>
