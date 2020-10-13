@@ -20,8 +20,8 @@ const AboutPage = () => (
             <ParentWrapper>
                 <ContentWrapper>
                     <div style={{ marginBottom: '2em' }}>
-                        <Circle  style={{ marginBottom: '2em' }} />
-                        <p>Hello.</p>
+                        <Circle style={{ marginBottom: '2em' }} />
+                        <h3>Hello</h3>
                         <p>
                             I'm a recent graduate of Monash University with a bachelor of IT in Software Development.
                             I love building products with a clean user interface whilst having impeccable value.
@@ -39,11 +39,11 @@ const AboutPage = () => (
                     </div>
 
                     <div style={{ marginBottom: '5rem', marginTop: '7.5rem' }}>
-                        <p>Selected works / projects</p>
+                        <h3>Selected works / projects</h3>
 
                         <ProjectWrapper>
                             <CurrentWrapper className="pulse">Current</CurrentWrapper>
-                            <h3>Kontax Cam</h3>
+                            <h4>Kontax Cam</h4>
                             <p>Open source instant camera hybrid app for film and digital photographers.</p>
                             <ul>
                                 <li><a href="https://apps.apple.com/app/kontax-cam/id1527110773" target="_blank" rel="noreferrer">Download on the  app store →</a></li>
@@ -51,37 +51,29 @@ const AboutPage = () => (
                             </ul>
                         </ProjectWrapper>
 
-                        <div className="divider"></div>
-
                         <ProjectWrapper>
-                            <h3>Personal photography portfolio</h3>
+                            <h4>Personal photography portfolio</h4>
                             <p>Designed and developed my own photography portfolio website using React (GatsbyJS), TailwindCSS, and contentful integration.</p>
                             <ul>
                                 <li><a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">Visit the website →</a></li>
                             </ul>
                         </ProjectWrapper>
 
-                        <div className="divider"></div>
-
                         <ProjectWrapper>
-                            <h3>Esper Satellites Imagery</h3>
+                            <h4>Esper Satellites Imagery</h4>
                             <p>Designed and developed the landing page of the company</p>
                             <ul>
                                 <li><a href="https://espersatellites.co" target="_blank" rel="noreferrer">View the website →</a></li>
                             </ul>
                         </ProjectWrapper>
 
-                        <div className="divider"></div>
-
                         <ProjectWrapper>
-                            <h3>sMasheDe</h3>
+                            <h4>sMasheDe</h4>
                             <p>Developed the landing page with React and Tailwind, integrated with Mailchimp.</p>
                             <ul>
                                 <li><a href="https://smashe.de" target="_blank" rel="noreferrer">Visit the website →</a></li>
                             </ul>
                         </ProjectWrapper>
-
-                        <div className="divider"></div>
 
                         <ProjectWrapper>
                             <h3>Ghibliii</h3>
@@ -91,10 +83,8 @@ const AboutPage = () => (
                             </ul>
                         </ProjectWrapper>
 
-                        <div className="divider"></div>
-
                         <ProjectWrapper>
-                            <h3>NookNook: Companion for ACNH</h3>
+                            <h4>NookNook: Companion for ACNH</h4>
                             <p>Powerful gesture-based Companion app for Animal Crossing: New Horizons.</p>
                             <ul>
                                 <li><a href="https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831" target="_blank" rel="noreferrer">Download on the  app store →</a></li>
@@ -103,11 +93,11 @@ const AboutPage = () => (
                     </div>
 
                     <div style={{ marginBottom: '5rem', marginTop: '7.5rem' }}>
-                        <p>Selected designs</p>
+                        <h3>Selected designs</h3>
 
                         <ProjectWrapper>
                             <img src={require('../images/vsco-mac.png')} alt="VSCO for MAC design" />
-                            <h3>VSCO for MacOS concept (Sep 2020)</h3>
+                            <h4>VSCO for MacOS concept (Sep 2020)</h4>
                         </ProjectWrapper>
                     </div>
                 </ContentWrapper>
@@ -121,22 +111,13 @@ const AboutPage = () => (
 export default AboutPage
 
 const Circle = styled.div`
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1rem;
+    height: 1rem;
     background: white;
     border-radius: 999px;
 `
 
 // Styled components
-const AboutImageWrapper = styled.div`
-    margin-bottom: 2rem;
-    
-
-    @media(max-width: 768px) {
-        text-align: center;
-    }
-`
-
 const ContentWrapper = styled.div`
     margin-top: 10rem;
     max-width: 450px;
@@ -154,11 +135,11 @@ const ParentWrapper = styled.div`
 
 const ProjectWrapper = styled.div`
     padding: 1em 0;
-    margin-top: 1em;
+    margin-top: 3rem;
 
-    h3 {
-        font-size: 1rem;
-        font-weight: 400;
+    h4 {
+        font-weight: 500;
+        margin: 0;
     }
 
     p {

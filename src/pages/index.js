@@ -21,7 +21,7 @@ const IndexPage = () => (
 
             <ParentWrapper>
                 <ContentWrapper>
-                    <p>Hi, i'm Kevin — Software developer living in Melbourne, Australia.</p>
+                    <h3>Hi, i'm Kevin — Software developer living in Melbourne, Australia.</h3>
                     <p>
                         Currently building <a href="https://kontax.cam" target="_blank" rel="noreferrer">Kontax Cam</a> in my spare time,
                         and a front-end developer at <a href="https://espersatellites.co" target="_blank" rel="noreferrer">Esper Satellites Imagery</a> startup.

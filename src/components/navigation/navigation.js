@@ -31,6 +31,7 @@ export default class navigation extends Component {
 
 const TitleWrapper = styled.h1`
     font-size: 1.5rem;
+    margin: 0;
     a {
         color: white;
     }
