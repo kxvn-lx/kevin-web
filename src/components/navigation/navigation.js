@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import styled from 'styled-components'
 
 import "./navigation.scss"
 
@@ -9,7 +10,9 @@ export default class navigation extends Component {
             <header>
                 <nav>
                     <div className="site-details">
-                        <Link to="/">Kevin Laminto</Link>
+                        <TitleWrapper>
+                            <Link to="/">Kevin Laminto</Link>
+                        </TitleWrapper>
                     </div>
                     <ul>
                         <li>
@@ -25,3 +28,10 @@ export default class navigation extends Component {
         )
     }
 }
+
+const TitleWrapper = styled.h1`
+    font-size: 1.5rem;
+    a {
+        color: white;
+    }
+`

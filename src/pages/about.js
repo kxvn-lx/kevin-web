@@ -20,10 +20,7 @@ const AboutPage = () => (
             <ParentWrapper>
                 <ContentWrapper>
                     <div style={{ marginBottom: '2em' }}>
-                        <AboutImageWrapper>
-                            <img src={require('../images/kevin.jpg')} alt="kevin profile" />
-                        </AboutImageWrapper>
-
+                        <Circle  style={{ marginBottom: '2em' }} />
                         <p>Hello.</p>
                         <p>
                             I'm a recent graduate of Monash University with a bachelor of IT in Software Development.
@@ -32,7 +29,7 @@ const AboutPage = () => (
 
                         <p>
                             I'm interested in building mobile apps (iOS) and web apps.
-                            Hence the technologies that I'm using quite a lot are React, Gatsby, Styled components, TailwindCSS, and GraphQL for the web - Swift and SwiftUI for iOS.
+                            Hence the technologies that I'm using quite a lot are React, GatsbyJS, NextJS, Styled components, TailwindCSS, and GraphQL for the web - Swift and SwiftUI for iOS.
                         </p>
 
                         <p>
@@ -58,7 +55,7 @@ const AboutPage = () => (
 
                         <ProjectWrapper>
                             <h3>Personal photography portfolio</h3>
-                            <p>Designed and developed my own photography portfolio website using React, TailwindCSS, and contentful integration.</p>
+                            <p>Designed and developed my own photography portfolio website using React (GatsbyJS), TailwindCSS, and contentful integration.</p>
                             <ul>
                                 <li><a href="https://www.kevinlaminto.com" target="_blank" rel="noreferrer">Visit the website →</a></li>
                             </ul>
@@ -122,6 +119,13 @@ const AboutPage = () => (
 )
 
 export default AboutPage
+
+const Circle = styled.div`
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    border-radius: 999px;
+`
 
 // Styled components
 const AboutImageWrapper = styled.div`
