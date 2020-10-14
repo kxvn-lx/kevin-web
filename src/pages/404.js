@@ -1,35 +1,20 @@
-import React from "react"
+import React from "react";
 
-import SEO from "../components/seo"
-import Navigation from "../components/navigation/navigation.js"
-import Footer from "../components/footer/footer"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-const NotFoundPage = () => (
-    <div>
-        <SEO
-            description="Kevin Laminto, software developer, interested in UI/UX design."
-            lang="us"
-            title="404"
-        />
-        <div className="main">
-            <Navigation />
-            <ParentWrapper>
-                <div className="content-wrapper">
-                    <h2>PAGE NOT FOUND</h2>
-                    <Link to="/">Back to home</Link>
-                </div>
-            </ParentWrapper>
-            <Footer />
-        </div>
-    </div>
-)
+function NotFoundPage() {
+    return (
+        <Layout>
+            <SEO title="404: Not found" />
 
-export default NotFoundPage
+            <div className="max-w-md">
+                <img className="w-64" src={require('../images/lost.jpeg')} alt="lost meme"  />
+                <h2>You lost my dude?</h2>
+                <p>The page does not exist. Off you go 👩‍🦽</p>
+            </div>
+        </Layout>
+    );
+}
 
-// Styled components
-const ParentWrapper = styled.div`
-    width: 70vw;
-    margin: 0 auto;
-`
+export default NotFoundPage;

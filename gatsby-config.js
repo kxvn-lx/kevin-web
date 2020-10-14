@@ -1,36 +1,51 @@
+const resolveConfig = require("tailwindcss/resolveConfig");
+const tailwindConfig = require("./tailwind.config.js");
+const path = require(`path`)
+
+const fullConfig = resolveConfig(tailwindConfig);
+
 module.exports = {
-  siteMetadata: {
-    title: `kevinweb.tech`,
-    description: `iOS Developer, interested in UI/UX design.`,
-    author: `Kevin Laminto <kevin.laminto@gmail.coM>`,
-  },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+    siteMetadata: {
+        title: `Kevin Laminto`,
+        description: `Software developer, Interested in UI/UX design.`,
+        author: `@kevinlx_`,
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
-}
+    plugins: [
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: path.join(__dirname, `src`, `images`),
+            },
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        `gatsby-plugin-styled-components`,
+        `gatsby-plugin-react-helmet`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `gatsby-starter-tailwind`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: fullConfig.theme.colors.white,
+                theme_color: fullConfig.theme.colors.teal["400"],
+                display: `minimal-ui`,
+                icon: `src/images/favicon.png`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-postcss`,
+            options: {
+                postCssPlugins: [
+                    require(`tailwindcss`)(tailwindConfig),
+                    require(`autoprefixer`),
+                    ...(process.env.NODE_ENV === `production`
+                        ? [require(`cssnano`)]
+                        : []),
+                ],
+            },
+        },
+        `gatsby-plugin-offline`,
+    ],
+};
