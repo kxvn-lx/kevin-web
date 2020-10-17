@@ -20,8 +20,12 @@ function LofiiiPage() {
 
                     {/* download and support */}
                     <div className="my-10 inline-block">
-                        <a className="mx-4 p-4 rounded-full bg-black text-white" href="./lofiii.zip" download>Download</a>
-                        <a className="mx-4" href="https://paypal.me/kevinlaminto?locale.x=en_AU">Donate on Paypal</a>
+                        <a className="p-4 rounded-full bg-black text-white" href="./lofiii.zip" download>Download</a>
+
+                        <div className="mt-10">
+                            <a className="mx-4" href="https://paypal.me/kevinlaminto?locale.x=en_AU">Donate on Paypal</a>
+                            <a className="mx-4" href="https://github.com/kxvn-lx/lofiii" target="_blank" rel="noopener noreferrer">Github</a>
+                        </div>
                     </div>
 
                     <Image imageName="lofiii.png" className="mt-10 rounded-lg shadow-xl" />
