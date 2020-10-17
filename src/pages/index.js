@@ -12,9 +12,9 @@ function IndexPage() {
                 title="Home"
             />
 
-            <div className="max-w-md">
+            <div className="max-w-md p-spacing h-spacing">
                 <Circle />
-                <h2>Hi, i'm Kevin — Software developer living in Melbourne, Australia.</h2>
+                <h2 className="text-3xl font-semibold">Hi, i'm Kevin — Software developer living in Melbourne, Australia.</h2>
                 <p>Currently building <a href="https://kontax.cam" target="_blank" rel="noopener noreferrer">Kontax Cam</a> in my spare time, and a front-end developer at <a href="https://espersatellites.co" target="_blank" rel="noopener noreferrer">Esper Satellites Imagery</a> startup.</p>
                 <p>Looking for casual, part-time, or full-time developer position.</p>
             </div>
@@ -26,7 +26,7 @@ export default IndexPage;
 
 const Circle = styled.div`
     width: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     height: 1rem;
     background: black;
     border-radius: 999px;

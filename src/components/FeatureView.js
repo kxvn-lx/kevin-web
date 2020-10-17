@@ -7,7 +7,7 @@ export default function FeatureView(props) {
     const links = props.links
 
     return (
-        <FeatureWrapper className="max-w-md">
+        <div className="max-w-md">
             <h4>{name}</h4>
             <p>{description}</p>
             <ul className="my-4">
@@ -19,15 +19,9 @@ export default function FeatureView(props) {
             </ul>
 
             <Divider className="bg-gray-200" />
-        </FeatureWrapper>
+        </div>
     )
 }
-
-const FeatureWrapper = styled.div`
-    h1,h2,h3,h4,h5,h6,p {
-        margin: 0;
-    }
-`
 
 const Divider = styled.div`
     height: 1px;

@@ -12,7 +12,7 @@ export default function about() {
                 title="About"
             />
 
-            <section className="max-w-md my-20">
+            <section className="max-w-md my-20 p-spacing">
                 <p>I'm a recent graduate of Monash University with a bachelor of IT in Software Development. I love building products with a clean user interface whilst having impeccable value.</p>
                 <p>I'm interested in building mobile apps (iOS) and web apps. Hence the technologies that I'm using quite a lot are React, GatsbyJS, NextJS, Styled components, TailwindCSS, and GraphQL for the web - Swift and SwiftUI for iOS.</p>
                 <p>When I'm not hacking around different techs, I enjoy doing <a href="https://www.kevinlaminto.com/" target="_blank" rel="noopener noreferrer">photography</a>, and listening/going to metal concerts.</p>
@@ -35,6 +35,16 @@ export default function about() {
 
 const SelectedDatasource = (
     [
+        {
+            name: `lofiii`,
+            desc: `ChilledCow's lofi hiphop livestream straight from your mac - natively.`,
+            links: [
+                {
+                    name: `View`,
+                    url: `/lofiii`
+                }
+            ]
+        },
         {
             name: `Kontax Cam`,
             desc: `Open source instant camera hybrid app for film and digital photographers.`,

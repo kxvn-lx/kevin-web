@@ -15,6 +15,14 @@ html {
     font-size: 15px;
 }
 
+.p-spacing p {
+    margin-bottom: 1rem;
+}
+
+.h-spacing h1, h2, h3 ,h4 ,h5 ,h6 {
+    margin-bottom: 1rem;
+}
+
 h1,
 h2,
 h3,
