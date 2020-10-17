@@ -20,7 +20,7 @@ function LofiiiPage() {
 
                     {/* download and support */}
                     <div className="my-10 inline-block">
-                        <a className="p-4 rounded-full bg-black text-white" href="./lofiii.zip" download>Download</a>
+                        <a className="p-4 rounded-full bg-black text-white" href="https://kevinweb.tech/lofiii.zip" download>Download</a>
 
                         <div className="mt-10">
                             <a className="mx-4" href="https://paypal.me/kevinlaminto?locale.x=en_AU">Donate on Paypal</a>
