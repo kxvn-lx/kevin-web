@@ -14,9 +14,9 @@ function IndexPage() {
 
             <div className="max-w-md p-spacing h-spacing">
                 <Circle />
-                <h2 className="text-3xl font-semibold">Hi, i'm Kevin — Software developer living in Melbourne, Australia.</h2>
-                <p>Currently building <a href="https://kontax.cam" target="_blank" rel="noopener noreferrer">Kontax Cam</a> in my spare time, and a front-end developer at <a href="https://espersatellites.co" target="_blank" rel="noopener noreferrer">Esper Satellites Imagery</a> startup.</p>
-                <p>Looking for casual, part-time, or full-time developer position.</p>
+                <h2 className="text-2xl font-semibold">Hi, i'm Kevin — Software developer living in Melbourne, Australia.</h2>
+                <p>Creator of <a href="https://kontax.cam" target="_blank" rel="noopener noreferrer">Kontax Cam</a>. Front-end engineer and iOS Developer at <a href="https://espersatellites.co" target="_blank" rel="noopener noreferrer">Esper Satellites Imagery</a> startup.</p>
+                <p>Looking for full-time developer position.</p>
             </div>
         </Layout>
     );
