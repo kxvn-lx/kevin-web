@@ -1,7 +1,7 @@
-import { useStaticQuery, graphql } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
-import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import { Helmet } from "react-helmet"
 
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(graphql`
@@ -14,9 +14,9 @@ function SEO({ description, lang, meta, keywords, title }) {
         }
       }
     }
-  `);
+  `)
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet
@@ -60,23 +60,23 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(
           keywords.length > 0
             ? {
-              name: `keywords`,
-              content: keywords.join(`, `),
-            }
+                name: `keywords`,
+                content: keywords.join(`, `),
+              }
             : []
         )
         .concat(meta)}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title} Web`}
     />
-  );
+  )
 }
 
 SEO.defaultProps = {
   lang: `en`,
   keywords: [],
   meta: [],
-};
+}
 
 SEO.propTypes = {
   description: PropTypes.string,
@@ -84,6 +84,6 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.array,
   title: PropTypes.string.isRequired,
-};
+}
 
-export default SEO;
+export default SEO

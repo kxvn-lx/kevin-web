@@ -2,24 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 
 export default function FeatureView(props) {
-    const name = props.name
-    const description = props.desc
-    const links = props.links
-
+    const { name, description, links } = props
     return (
-        <div className="max-w-md">
+        <React.Fragment>
             <h4>{name}</h4>
             <p>{description}</p>
-            <ul className="my-4">
-                {links.map(link => (
-                    <li key={link.name}>
+            <ul className='my-4'>
+                {links.map((link, index) => (
+                    <li key={index}>
                         <a href={link.url}>{link.name} →</a>
                     </li>
                 ))}
             </ul>
 
-            <Divider className="bg-gray-200" />
-        </div>
+            <Divider className='bg-gray-200' />
+        </React.Fragment>
     )
 }
 
