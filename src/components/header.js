@@ -16,7 +16,6 @@ function Header() {
         <header className="py-10 mb-20">
             <Link to="/" className="text-black"><h1 className="font-bold">{site.siteMetadata.title}</h1></Link>
 
-
             <nav>
                 <ul>
                     <li><Link to="/about">About</Link></li>

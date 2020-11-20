@@ -30,9 +30,9 @@ function Image(props) {
     )
 
     return (
-        <div>
+        <React.Fragment>
             <Img className={`${className}`} fluid={image.node.childImageSharp.fluid} />
-        </div>
+        </React.Fragment>
     )
 }
 
