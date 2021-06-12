@@ -4,23 +4,14 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
-
-.font {
-    font-family: 'Playfair Display', serif;
-}
-
 html {
     line-height: 1.8;
     font-size: 15px;
+    background-color: black;
 }
 
 .p-spacing p {
     margin-bottom: 1rem;
-}
-
-* {
-    color: #404040;
 }
 
 h2,
@@ -40,7 +31,7 @@ h2 {
 }
 
 a {
-    @apply text-gray-600;
+    @apply text-blue-300;
 }
 
 a:hover {

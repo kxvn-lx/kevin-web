@@ -49,7 +49,7 @@ export default function about() {
             </section>
 
             <section className='mt-20'>
-                <h2 className='text-center'>Selected works & projects</h2>
+                <h2>Selected works & projects</h2>
                 <ul>
                     {selectedProjects.map((item) => (
                         <li key={item.name} className='my-10'>

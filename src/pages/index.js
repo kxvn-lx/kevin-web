@@ -18,22 +18,14 @@ function IndexPage() {
             />
 
             <section className='p-spacing h-spacing'>
+                <img className='w-40' src={require('../images/headshot.png')} />
                 <h1 className='mb-20'>
                     Hi, i'm Kevin — <br />
                     Software developer living in Melbourne, Australia.
                 </h1>
 
                 <p>
-                    Creator of{' '}
-                    <a
-                        href='https://kontax.cam'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
-                        {' '}
-                        Kontax Cam
-                    </a>
-                    . Part time front-end and iOS Engineer at{' '}
+                    Part time front-end and iOS Engineer at{' '}
                     <a
                         href='https://espersatellites.co'
                         target='_blank'

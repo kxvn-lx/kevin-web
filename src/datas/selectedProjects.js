@@ -13,13 +13,13 @@ export const selectedProjects = [
         name: `Kontax Cam`,
         description: `Open source instant camera hybrid app for film and digital photographers.`,
         links: [
+            // {
+            //     name: `Download on the  app store`,
+            //     url: `https://apps.apple.com/app/kontax-cam/id1527110773`,
+            // },
             {
-                name: `Download on the  app store`,
-                url: `https://apps.apple.com/app/kontax-cam/id1527110773`,
-            },
-            {
-                name: `Visit the website`,
-                url: `https://kontax.cam/`,
+                name: `View on Github`,
+                url: `https://github.com/kxvn-lx/Kontax-Cam`,
             },
         ],
     },

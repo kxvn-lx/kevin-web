@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export default function FeatureView(props) {
     const { name, description, links } = props
+
     return (
         <React.Fragment>
             <h4>{name}</h4>
@@ -15,7 +16,7 @@ export default function FeatureView(props) {
                 ))}
             </ul>
 
-            <Divider className='bg-gray-200' />
+            <Divider className='bg-gray-800' />
         </React.Fragment>
     )
 }
