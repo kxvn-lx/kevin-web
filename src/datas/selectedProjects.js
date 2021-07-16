@@ -1,29 +1,5 @@
 export const selectedProjects = [
-    {
-        name: `lofiii`,
-        description: `ChilledCow's lofi hiphop livestream straight from your mac - natively.`,
-        links: [
-            {
-                name: `View`,
-                url: `/lofiii`,
-            },
-        ],
-    },
-    {
-        name: `Kontax Cam`,
-        description: `Open source instant camera hybrid app for film and digital photographers.`,
-        links: [
-            // {
-            //     name: `Download on the  app store`,
-            //     url: `https://apps.apple.com/app/kontax-cam/id1527110773`,
-            // },
-            {
-                name: `View on Github`,
-                url: `https://github.com/kxvn-lx/Kontax-Cam`,
-            },
-        ],
-    },
-    {
+        {
         name: `Personal photography portfolio`,
         description: `Designed and developed my own photography portfolio website using React (GatsbyJS), TailwindCSS, and contentful integration.`,
         links: [
@@ -40,6 +16,26 @@ export const selectedProjects = [
             {
                 name: `Visit the website`,
                 url: `https://espersatellites.co/`,
+            },
+        ],
+    },
+    {
+        name: `lofiii`,
+        description: `ChilledCow's lofi hiphop livestream straight from your mac - natively.`,
+        links: [
+            {
+                name: `View`,
+                url: `/lofiii`,
+            },
+        ],
+    },
+    {
+        name: `Kontax Cam`,
+        description: `Open source instant camera hybrid app (iOS) for film and digital photographers.`,
+        links: [
+            {
+                name: `View on Github`,
+                url: `https://github.com/kxvn-lx/Kontax-Cam`,
             },
         ],
     },
@@ -65,11 +61,11 @@ export const selectedProjects = [
     },
     {
         name: `NookNook: Companion for ACNH`,
-        description: `Powerful gesture-based Companion app for Animal Crossing: New Horizons.`,
+        description: `Powerful gesture-based Companion app (iOS) for Animal Crossing: New Horizons.`,
         links: [
             {
-                name: `Download on the  app store`,
-                url: `https://apps.apple.com/au/app/nooknook-companion-for-acnh/id1510282831`,
+                name: `View on Github`,
+                url: `https://github.com/kxvn-lx/NookNook`,
             },
         ],
     },

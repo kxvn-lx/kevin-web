@@ -7,7 +7,7 @@
 html {
     line-height: 1.8;
     font-size: 15px;
-    background-color: black;
+    background-color: #f2f1ef;
 }
 
 .p-spacing p {
@@ -31,9 +31,9 @@ h2 {
 }
 
 a {
-    @apply text-blue-300;
+    @apply text-blue-400;
 }
 
 a:hover {
-    @apply border-b border-gray-600;
+    @apply border-b border-gray-400;
 }

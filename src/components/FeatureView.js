@@ -6,7 +6,7 @@ export default function FeatureView(props) {
 
     return (
         <React.Fragment>
-            <h4>{name}</h4>
+            <h4 className="font-bold">{name}</h4>
             <p>{description}</p>
             <ul className='my-4'>
                 {links.map((link, index) => (
@@ -16,7 +16,7 @@ export default function FeatureView(props) {
                 ))}
             </ul>
 
-            <Divider className='bg-gray-800' />
+            <Divider className='bg-gray-300' />
         </React.Fragment>
     )
 }
